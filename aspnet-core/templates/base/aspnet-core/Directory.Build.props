@@ -1,0 +1,36 @@
+<Project>
+	<PropertyGroup>
+	    <AbpVersion>7.2.1</AbpVersion>
+		<MicrosoftVersion>7.0.0</MicrosoftVersion>
+		<MicrosoftVisualStudioAzureVersion>1.17.0</MicrosoftVisualStudioAzureVersion>
+		<AbpAspNetCoreMvcUIThemeLeptonXLiteVersion>2.0.0-*</AbpAspNetCoreMvcUIThemeLeptonXLiteVersion>
+		<NewtonsoftJsonVersion>13.0.2</NewtonsoftJsonVersion>
+		<DistributedLockRedisVersion>1.0.2</DistributedLockRedisVersion>
+		<SwashbuckleAspNetCoreVersion>6.5.0</SwashbuckleAspNetCoreVersion>
+		<SerilogAspNetCoreVersion>5.0.0</SerilogAspNetCoreVersion>
+		<SerilogSinksAsyncVersion>1.5.0</SerilogSinksAsyncVersion>
+		<SerilogExtensionsLoggingVersion>3.1.0</SerilogExtensionsLoggingVersion>
+		<SerilogSinksFileVersion>5.0.0</SerilogSinksFileVersion>
+		<SerilogSinksConsoleVersion>4.1.0</SerilogSinksConsoleVersion>
+		<SerilogAspNetCoreVersion>4.1.0</SerilogAspNetCoreVersion>
+		<MicrosoftCSharpVersion>4.7.0</MicrosoftCSharpVersion>
+		<MagicodesIEExcelVersion>2.7.4.4</MagicodesIEExcelVersion>
+		
+		<MicrosoftNETTestSdkVersion>17.2.0</MicrosoftNETTestSdkVersion>
+		<XunitVersion>2.4.2</XunitVersion>
+		<XunitRunnerVisualstudioVersion>2.4.5</XunitRunnerVisualstudioVersion>
+		<XunitExtensibilityExecutionVersion>2.4.2</XunitExtensibilityExecutionVersion>
+		<CoverletCollectorVersion>3.1.2</CoverletCollectorVersion>
+		<MoqVersion>4.18.4</MoqVersion>
+		<NSubstituteVersion>5.0.0</NSubstituteVersion>
+		<NSubstituteAnalyzersCSharpVersion>1.0.16</NSubstituteAnalyzersCSharpVersion>
+		<ShouldlyVersion>4.1.0</ShouldlyVersion>
+		<YarpReverseProxyVersion>1.0.0</YarpReverseProxyVersion>
+		
+		
+		
+	
+	
+	</PropertyGroup>
+	
+</Project>

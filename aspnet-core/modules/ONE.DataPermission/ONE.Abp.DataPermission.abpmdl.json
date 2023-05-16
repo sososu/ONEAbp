@@ -1,0 +1,111 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {},
+      "host": {}
+    }
+  },
+  "packages": {
+    "ONE.Abp.DataPermission.Domain.Shared": {
+      "path": "src/ONE.Abp.DataPermission.Domain.Shared/ONE.Abp.DataPermission.Domain.Shared.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.DataPermission.Domain": {
+      "path": "src/ONE.Abp.DataPermission.Domain/ONE.Abp.DataPermission.Domain.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.DataPermission.Application.Contracts": {
+      "path": "src/ONE.Abp.DataPermission.Application.Contracts/ONE.Abp.DataPermission.Application.Contracts.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.DataPermission.Application": {
+      "path": "src/ONE.Abp.DataPermission.Application/ONE.Abp.DataPermission.Application.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.DataPermission.EntityFrameworkCore": {
+      "path": "src/ONE.Abp.DataPermission.EntityFrameworkCore/ONE.Abp.DataPermission.EntityFrameworkCore.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.DataPermission.MongoDB": {
+      "path": "src/ONE.Abp.DataPermission.MongoDB/ONE.Abp.DataPermission.MongoDB.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.DataPermission.HttpApi": {
+      "path": "src/ONE.Abp.DataPermission.HttpApi/ONE.Abp.DataPermission.HttpApi.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.DataPermission.HttpApi.Client": {
+      "path": "src/ONE.Abp.DataPermission.HttpApi.Client/ONE.Abp.DataPermission.HttpApi.Client.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.DataPermission.TestBase": {
+      "path": "test/ONE.Abp.DataPermission.TestBase/ONE.Abp.DataPermission.TestBase.abppkg.json",
+      "folder": "test"
+    },
+    "ONE.Abp.DataPermission.EntityFrameworkCore.Tests": {
+      "path": "test/ONE.Abp.DataPermission.EntityFrameworkCore.Tests/ONE.Abp.DataPermission.EntityFrameworkCore.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "ONE.Abp.DataPermission.MongoDB.Tests": {
+      "path": "test/ONE.Abp.DataPermission.MongoDB.Tests/ONE.Abp.DataPermission.MongoDB.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "ONE.Abp.DataPermission.Domain.Tests": {
+      "path": "test/ONE.Abp.DataPermission.Domain.Tests/ONE.Abp.DataPermission.Domain.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "ONE.Abp.DataPermission.Application.Tests": {
+      "path": "test/ONE.Abp.DataPermission.Application.Tests/ONE.Abp.DataPermission.Application.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "ONE.Abp.DataPermission.HttpApi.Host": {
+      "path": "host/ONE.Abp.DataPermission.HttpApi.Host/ONE.Abp.DataPermission.HttpApi.Host.abppkg.json",
+      "folder": "host"
+    },
+    "ONE.Abp.DataPermission.Web": {
+      "path": "src/ONE.Abp.DataPermission.Web/ONE.Abp.DataPermission.Web.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.DataPermission.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/ONE.Abp.DataPermission.HttpApi.Client.ConsoleTestApp/ONE.Abp.DataPermission.HttpApi.Client.ConsoleTestApp.abppkg.json",
+      "folder": "test"
+    },
+    "ONE.Abp.DataPermission.Web.Host": {
+      "path": "host/ONE.Abp.DataPermission.Web.Host/ONE.Abp.DataPermission.Web.Host.abppkg.json",
+      "folder": "host"
+    },
+    "ONE.Abp.DataPermission.AuthServer": {
+      "path": "host/ONE.Abp.DataPermission.AuthServer/ONE.Abp.DataPermission.AuthServer.abppkg.json",
+      "folder": "host"
+    },
+    "ONE.Abp.DataPermission.Host.Shared": {
+      "path": "host/ONE.Abp.DataPermission.Host.Shared/ONE.Abp.DataPermission.Host.Shared.abppkg.json",
+      "folder": "host"
+    },
+    "ONE.Abp.DataPermission.Web.Unified": {
+      "path": "host/ONE.Abp.DataPermission.Web.Unified/ONE.Abp.DataPermission.Web.Unified.abppkg.json",
+      "folder": "host"
+    },
+    "ONE.Abp.DataPermission.Blazor": {
+      "path": "src/ONE.Abp.DataPermission.Blazor/ONE.Abp.DataPermission.Blazor.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.DataPermission.Blazor.Host": {
+      "path": "host/ONE.Abp.DataPermission.Blazor.Host/ONE.Abp.DataPermission.Blazor.Host.abppkg.json",
+      "folder": "host"
+    },
+    "ONE.Abp.DataPermission.Blazor.Server": {
+      "path": "src/ONE.Abp.DataPermission.Blazor.Server/ONE.Abp.DataPermission.Blazor.Server.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.DataPermission.Blazor.WebAssembly": {
+      "path": "src/ONE.Abp.DataPermission.Blazor.WebAssembly/ONE.Abp.DataPermission.Blazor.WebAssembly.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.DataPermission.Blazor.Server.Host": {
+      "path": "host/ONE.Abp.DataPermission.Blazor.Server.Host/ONE.Abp.DataPermission.Blazor.Server.Host.abppkg.json",
+      "folder": "host"
+    }
+  }
+}

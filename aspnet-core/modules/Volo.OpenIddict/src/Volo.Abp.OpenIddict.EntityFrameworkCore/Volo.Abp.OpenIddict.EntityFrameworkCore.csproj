@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\..\common.props" />
+  
+
+  <PropertyGroup><LangVersion>latest</LangVersion>
+    <TargetFramework>net7.0</TargetFramework>
+	 <PackageId>ONE.Abp.OpenIddict.EntityFrameworkCore</PackageId>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.EntityFrameworkCore" Version="$(AbpVersion)" />
+    <ProjectReference Include="..\Volo.Abp.OpenIddict.Domain\Volo.Abp.OpenIddict.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

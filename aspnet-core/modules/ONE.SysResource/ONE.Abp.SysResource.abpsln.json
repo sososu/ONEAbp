@@ -1,0 +1,7 @@
+{
+  "modules": {
+    "ONE.Abp.SysResource": {
+      "path": "ONE.Abp.SysResource.abpmdl.json"
+    }
+  }
+}

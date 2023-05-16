@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<RootNamespace>ONE.Abp.FileManagement</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="SixLabors.ImageSharp" Version="3.0.1" />
+		<PackageReference Include="Volo.Abp.AutoMapper" Version="$(AbpVersion)" />
+		<PackageReference Include="Volo.Abp.Ddd.Application" Version="$(AbpVersion)" />
+		<PackageReference Include="Volo.Abp.BlobStoring" Version="$(AbpVersion)" />
+		<ProjectReference Include="..\ONE.Abp.FileManagement.Application.Contracts\ONE.Abp.FileManagement.Application.Contracts.csproj" />
+		<ProjectReference Include="..\ONE.Abp.FileManagement.Domain\ONE.Abp.FileManagement.Domain.csproj" />
+		<ProjectReference Include="..\..\..\..\framework\ONE.Abp\src\ONE.Abp.Pagination\ONE.Abp.Pagination.csproj" />
+	</ItemGroup>
+
+</Project>

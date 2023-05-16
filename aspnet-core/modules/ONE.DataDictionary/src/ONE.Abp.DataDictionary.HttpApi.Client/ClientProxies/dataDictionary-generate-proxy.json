@@ -1,0 +1,563 @@
+{
+  "modules": {
+    "dataDictionary": {
+      "rootPath": "dataDictionary",
+      "remoteServiceName": "AbpDataDictionary",
+      "controllers": {
+        "ONE.Abp.DataDictionary.DataItems.DataItemController": {
+          "controllerName": "DataItem",
+          "controllerGroupName": "DataItem",
+          "isRemoteService": true,
+          "isIntegrationService": false,
+          "apiVersion": null,
+          "type": "ONE.Abp.DataDictionary.DataItems.DataItemController",
+          "interfaces": [
+            {
+              "type": "ONE.Abp.DataDictionary.DataItems.IDataItemAppService",
+              "name": "IDataItemAppService",
+              "methods": [
+                {
+                  "name": "GetEnableCategoryAsync",
+                  "parametersOnMethod": [],
+                  "returnValue": {
+                    "type": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.DataDictionary.DataItems.DataItemDto>",
+                    "typeSimple": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.DataDictionary.DataItems.DataItemDto>"
+                  }
+                },
+                {
+                  "name": "GetEnableItemsAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "categoryId",
+                      "typeAsString": "System.Guid, System.Private.CoreLib",
+                      "type": "System.Guid",
+                      "typeSimple": "string",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.DataDictionary.DataItems.DataItemDto>",
+                    "typeSimple": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.DataDictionary.DataItems.DataItemDto>"
+                  }
+                },
+                {
+                  "name": "GetCategoryAsync",
+                  "parametersOnMethod": [],
+                  "returnValue": {
+                    "type": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.DataDictionary.DataItems.DataItemDto>",
+                    "typeSimple": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.DataDictionary.DataItems.DataItemDto>"
+                  }
+                },
+                {
+                  "name": "CreateCategoryAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "input",
+                      "typeAsString": "ONE.Abp.DataDictionary.DataItems.DataCategoryCreateInput, ONE.Abp.DataDictionary.Application.Contracts",
+                      "type": "ONE.Abp.DataDictionary.DataItems.DataCategoryCreateInput",
+                      "typeSimple": "ONE.Abp.DataDictionary.DataItems.DataCategoryCreateInput",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "System.Void",
+                    "typeSimple": "System.Void"
+                  }
+                },
+                {
+                  "name": "UpdateCategoryAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "id",
+                      "typeAsString": "System.Guid, System.Private.CoreLib",
+                      "type": "System.Guid",
+                      "typeSimple": "string",
+                      "isOptional": false,
+                      "defaultValue": null
+                    },
+                    {
+                      "name": "input",
+                      "typeAsString": "ONE.Abp.DataDictionary.DataItems.DataCategoryUpdate, ONE.Abp.DataDictionary.Application.Contracts",
+                      "type": "ONE.Abp.DataDictionary.DataItems.DataCategoryUpdate",
+                      "typeSimple": "ONE.Abp.DataDictionary.DataItems.DataCategoryUpdate",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "System.Void",
+                    "typeSimple": "System.Void"
+                  }
+                },
+                {
+                  "name": "CreateAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "input",
+                      "typeAsString": "ONE.Abp.DataDictionary.DataItems.DataItemCreateInput, ONE.Abp.DataDictionary.Application.Contracts",
+                      "type": "ONE.Abp.DataDictionary.DataItems.DataItemCreateInput",
+                      "typeSimple": "ONE.Abp.DataDictionary.DataItems.DataItemCreateInput",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "System.Void",
+                    "typeSimple": "System.Void"
+                  }
+                },
+                {
+                  "name": "UpdateAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "id",
+                      "typeAsString": "System.Guid, System.Private.CoreLib",
+                      "type": "System.Guid",
+                      "typeSimple": "string",
+                      "isOptional": false,
+                      "defaultValue": null
+                    },
+                    {
+                      "name": "input",
+                      "typeAsString": "ONE.Abp.DataDictionary.DataItems.DataItemCreateUpdate, ONE.Abp.DataDictionary.Application.Contracts",
+                      "type": "ONE.Abp.DataDictionary.DataItems.DataItemCreateUpdate",
+                      "typeSimple": "ONE.Abp.DataDictionary.DataItems.DataItemCreateUpdate",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "System.Void",
+                    "typeSimple": "System.Void"
+                  }
+                },
+                {
+                  "name": "DeleteAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "id",
+                      "typeAsString": "System.Guid, System.Private.CoreLib",
+                      "type": "System.Guid",
+                      "typeSimple": "string",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "System.Void",
+                    "typeSimple": "System.Void"
+                  }
+                },
+                {
+                  "name": "GetItemsAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "categoryId",
+                      "typeAsString": "System.Guid, System.Private.CoreLib",
+                      "type": "System.Guid",
+                      "typeSimple": "string",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.DataDictionary.DataItems.DataItemDto>",
+                    "typeSimple": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.DataDictionary.DataItems.DataItemDto>"
+                  }
+                },
+                {
+                  "name": "GetItemsByParentCodeAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "code",
+                      "typeAsString": "System.String, System.Private.CoreLib",
+                      "type": "System.String",
+                      "typeSimple": "string",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.DataDictionary.DataItems.DataItemDto>",
+                    "typeSimple": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.DataDictionary.DataItems.DataItemDto>"
+                  }
+                }
+              ]
+            }
+          ],
+          "actions": {
+            "CreateCategoryAsyncByInput": {
+              "uniqueName": "CreateCategoryAsyncByInput",
+              "name": "CreateCategoryAsync",
+              "httpMethod": "POST",
+              "url": "api/data-dictionary/datas/category",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "input",
+                  "typeAsString": "ONE.Abp.DataDictionary.DataItems.DataCategoryCreateInput, ONE.Abp.DataDictionary.Application.Contracts",
+                  "type": "ONE.Abp.DataDictionary.DataItems.DataCategoryCreateInput",
+                  "typeSimple": "ONE.Abp.DataDictionary.DataItems.DataCategoryCreateInput",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "input",
+                  "name": "input",
+                  "jsonName": null,
+                  "type": "ONE.Abp.DataDictionary.DataItems.DataCategoryCreateInput",
+                  "typeSimple": "ONE.Abp.DataDictionary.DataItems.DataCategoryCreateInput",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "Body",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "System.Void",
+                "typeSimple": "System.Void"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.DataDictionary.DataItems.IDataItemAppService"
+            },
+            "UpdateCategoryAsyncByIdAndInput": {
+              "uniqueName": "UpdateCategoryAsyncByIdAndInput",
+              "name": "UpdateCategoryAsync",
+              "httpMethod": "PUT",
+              "url": "api/data-dictionary/datas/category/{id}",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "id",
+                  "typeAsString": "System.Guid, System.Private.CoreLib",
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null
+                },
+                {
+                  "name": "input",
+                  "typeAsString": "ONE.Abp.DataDictionary.DataItems.DataCategoryUpdate, ONE.Abp.DataDictionary.Application.Contracts",
+                  "type": "ONE.Abp.DataDictionary.DataItems.DataCategoryUpdate",
+                  "typeSimple": "ONE.Abp.DataDictionary.DataItems.DataCategoryUpdate",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "id",
+                  "name": "id",
+                  "jsonName": null,
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": [],
+                  "bindingSourceId": "Path",
+                  "descriptorName": ""
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "input",
+                  "jsonName": null,
+                  "type": "ONE.Abp.DataDictionary.DataItems.DataCategoryUpdate",
+                  "typeSimple": "ONE.Abp.DataDictionary.DataItems.DataCategoryUpdate",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "Body",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "System.Void",
+                "typeSimple": "System.Void"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.DataDictionary.DataItems.IDataItemAppService"
+            },
+            "GetCategoryAsync": {
+              "uniqueName": "GetCategoryAsync",
+              "name": "GetCategoryAsync",
+              "httpMethod": "GET",
+              "url": "api/data-dictionary/datas/categorys",
+              "supportedVersions": [],
+              "parametersOnMethod": [],
+              "parameters": [],
+              "returnValue": {
+                "type": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.DataDictionary.DataItems.DataItemDto>",
+                "typeSimple": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.DataDictionary.DataItems.DataItemDto>"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.DataDictionary.DataItems.IDataItemAppService"
+            },
+            "CreateAsyncByInput": {
+              "uniqueName": "CreateAsyncByInput",
+              "name": "CreateAsync",
+              "httpMethod": "POST",
+              "url": "api/data-dictionary/datas/item",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "input",
+                  "typeAsString": "ONE.Abp.DataDictionary.DataItems.DataItemCreateInput, ONE.Abp.DataDictionary.Application.Contracts",
+                  "type": "ONE.Abp.DataDictionary.DataItems.DataItemCreateInput",
+                  "typeSimple": "ONE.Abp.DataDictionary.DataItems.DataItemCreateInput",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "input",
+                  "name": "input",
+                  "jsonName": null,
+                  "type": "ONE.Abp.DataDictionary.DataItems.DataItemCreateInput",
+                  "typeSimple": "ONE.Abp.DataDictionary.DataItems.DataItemCreateInput",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "Body",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "System.Void",
+                "typeSimple": "System.Void"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.DataDictionary.DataItems.IDataItemAppService"
+            },
+            "UpdateAsyncByIdAndInput": {
+              "uniqueName": "UpdateAsyncByIdAndInput",
+              "name": "UpdateAsync",
+              "httpMethod": "PUT",
+              "url": "api/data-dictionary/datas/item/{id}",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "id",
+                  "typeAsString": "System.Guid, System.Private.CoreLib",
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null
+                },
+                {
+                  "name": "input",
+                  "typeAsString": "ONE.Abp.DataDictionary.DataItems.DataItemCreateUpdate, ONE.Abp.DataDictionary.Application.Contracts",
+                  "type": "ONE.Abp.DataDictionary.DataItems.DataItemCreateUpdate",
+                  "typeSimple": "ONE.Abp.DataDictionary.DataItems.DataItemCreateUpdate",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "id",
+                  "name": "id",
+                  "jsonName": null,
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": [],
+                  "bindingSourceId": "Path",
+                  "descriptorName": ""
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "input",
+                  "jsonName": null,
+                  "type": "ONE.Abp.DataDictionary.DataItems.DataItemCreateUpdate",
+                  "typeSimple": "ONE.Abp.DataDictionary.DataItems.DataItemCreateUpdate",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "Body",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "System.Void",
+                "typeSimple": "System.Void"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.DataDictionary.DataItems.IDataItemAppService"
+            },
+            "GetItemsAsyncByCategoryId": {
+              "uniqueName": "GetItemsAsyncByCategoryId",
+              "name": "GetItemsAsync",
+              "httpMethod": "GET",
+              "url": "api/data-dictionary/datas/items",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "categoryId",
+                  "typeAsString": "System.Guid, System.Private.CoreLib",
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "categoryId",
+                  "name": "categoryId",
+                  "jsonName": null,
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.DataDictionary.DataItems.DataItemDto>",
+                "typeSimple": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.DataDictionary.DataItems.DataItemDto>"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.DataDictionary.DataItems.IDataItemAppService"
+            },
+            "DeleteAsyncById": {
+              "uniqueName": "DeleteAsyncById",
+              "name": "DeleteAsync",
+              "httpMethod": "DELETE",
+              "url": "api/data-dictionary/datas/{id}",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "id",
+                  "typeAsString": "System.Guid, System.Private.CoreLib",
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "id",
+                  "name": "id",
+                  "jsonName": null,
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": [],
+                  "bindingSourceId": "Path",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "System.Void",
+                "typeSimple": "System.Void"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.DataDictionary.DataItems.IDataItemAppService"
+            },
+            "GetEnableCategoryAsync": {
+              "uniqueName": "GetEnableCategoryAsync",
+              "name": "GetEnableCategoryAsync",
+              "httpMethod": "GET",
+              "url": "api/data-dictionary/datas/enable/categorys",
+              "supportedVersions": [],
+              "parametersOnMethod": [],
+              "parameters": [],
+              "returnValue": {
+                "type": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.DataDictionary.DataItems.DataItemDto>",
+                "typeSimple": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.DataDictionary.DataItems.DataItemDto>"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.DataDictionary.DataItems.IDataItemAppService"
+            },
+            "GetEnableItemsAsyncByCategoryId": {
+              "uniqueName": "GetEnableItemsAsyncByCategoryId",
+              "name": "GetEnableItemsAsync",
+              "httpMethod": "GET",
+              "url": "api/data-dictionary/datas/enable/items",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "categoryId",
+                  "typeAsString": "System.Guid, System.Private.CoreLib",
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "categoryId",
+                  "name": "categoryId",
+                  "jsonName": null,
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.DataDictionary.DataItems.DataItemDto>",
+                "typeSimple": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.DataDictionary.DataItems.DataItemDto>"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.DataDictionary.DataItems.IDataItemAppService"
+            },
+            "GetItemsByParentCodeAsyncByCode": {
+              "uniqueName": "GetItemsByParentCodeAsyncByCode",
+              "name": "GetItemsByParentCodeAsync",
+              "httpMethod": "GET",
+              "url": "api/data-dictionary/datas/items/bycode",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "code",
+                  "typeAsString": "System.String, System.Private.CoreLib",
+                  "type": "System.String",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "code",
+                  "name": "code",
+                  "jsonName": null,
+                  "type": "System.String",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.DataDictionary.DataItems.DataItemDto>",
+                "typeSimple": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.DataDictionary.DataItems.DataItemDto>"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.DataDictionary.DataItems.IDataItemAppService"
+            }
+          }
+        }
+      }
+    }
+  },
+  "types": {}
+}

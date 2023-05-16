@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+
+
+	<Import Project="..\..\..\..\common.props" />
+
+  <PropertyGroup><LangVersion>latest</LangVersion>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>Volo.Abp.Account.Blazor</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AspNetCore.Components.Web.Theming" Version="$(AbpVersion)" />
+    <PackageReference Include="Volo.Abp.AutoMapper" Version="$(AbpVersion)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Volo.Abp.Account.Application.Contracts\Volo.Abp.Account.Application.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

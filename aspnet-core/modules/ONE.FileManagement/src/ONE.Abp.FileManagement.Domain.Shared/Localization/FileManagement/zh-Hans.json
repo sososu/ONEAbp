@@ -1,0 +1,19 @@
+{
+  "culture": "zh-Hans",
+  "texts": {
+    "MyAccount": "我的账户",
+    "SamplePageMessage": "FileManagement模块的示例页面",
+    "FileManagement:1001": "上传文件 '{Name}' 不能为空",
+    "FileManagement:1002": "文件超过最大上载大小 ({Size} MB)!",
+    "FileManagement:1003": "不支持文件格式 '{Mine}'",
+    "FileManagement:1004": "剩余空间不足，总容量为 ({Size} MB)!",
+    "Permission:Default": "默认",
+    "Permission:Create": "创建",
+    "Permission:Update": "编辑",
+    "Permission:Enable": "启用",
+    "Permission:Delete": "删除",
+    "Permission:Download": "下载",
+    "Permission:SettingManagementPermissions": "配置",
+    "Permission:FileSetting": "文件配置"
+  }
+}

@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+
+
+	<Import Project="..\..\..\..\common.props" />
+
+	<PropertyGroup>
+		<LangVersion>latest</LangVersion>
+		<TargetFramework>net7.0</TargetFramework>
+		<AssemblyName>Volo.Abp.Account.Application</AssemblyName>
+		<PackageId>ONE.Abp.Account.Application</PackageId>
+		<GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
+		<RootNamespace />
+	</PropertyGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Include="Volo\Abp\Account\Emailing\Templates\*.tpl" />
+		<None Remove="Volo\Abp\Account\Emailing\Templates\*.tpl" />
+		<ProjectReference Include="..\..\..\..\modules\ONE.FileManagement\src\ONE.Abp.FileManagement.Application.Contracts\ONE.Abp.FileManagement.Application.Contracts.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="System.Text.Encodings.Web" Version="$(MicrosoftPackageVersion)" />
+		<ProjectReference Include="..\Volo.Abp.Account.Application.Contracts\Volo.Abp.Account.Application.Contracts.csproj" />
+		<ProjectReference Include="..\..\..\Volo.Identity\src\Volo.Abp.Identity.Application\Volo.Abp.Identity.Application.csproj" />
+		<PackageReference Include="Volo.Abp.UI.Navigation" Version="$(AbpVersion)" />
+		<PackageReference Include="Volo.Abp.Emailing" Version="$(AbpVersion)" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="$(MicrosoftPackageVersion)" />
+	</ItemGroup>
+
+</Project>

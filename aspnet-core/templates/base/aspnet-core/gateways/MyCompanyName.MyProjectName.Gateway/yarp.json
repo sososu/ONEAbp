@@ -1,0 +1,89 @@
+﻿{
+  "ReverseProxy": {
+    "Routes": {
+      "Account Service": {
+        "ClusterId": "administrationCluster",
+        "Match": {
+          "Path": "/api/account/{**everything}"
+        }
+      },
+      "Tenants Service": {
+        "ClusterId": "administrationCluster",
+        "Match": {
+          "Path": "/api/multi-tenancy/tenants/{**everything}"
+        }
+      },
+      "Identity Service": {
+        "ClusterId": "administrationCluster",
+        "Match": {
+          "Path": "/api/identity/{**everything}"
+        }
+      },
+      "data-dictionary-route": {
+        "ClusterId": "administrationCluster",
+        "Match": {
+          "Path": "/api/data-dictionary/{**everything}"
+        }
+      },
+      "data-permission-route": {
+        "ClusterId": "administrationCluster",
+        "Match": {
+          "Path": "/api/data-permission/{**everything}"
+        }
+      },
+      "file-management-route": {
+        "ClusterId": "administrationCluster",
+        "Match": {
+          "Path": "/api/file-management/{**everything}"
+        }
+      },
+
+      "sys-resource-route": {
+        "ClusterId": "administrationCluster",
+        "Match": {
+          "Path": "/api/sys-resource/sale-version/{**everything}"
+        }
+      },
+      "feature-management-route": {
+        "ClusterId": "administrationCluster",
+        "Match": {
+          "Path": "/api/feature-management/{**everything}"
+        }
+      },
+      "permission-management-route": {
+        "ClusterId": "administrationCluster",
+        "Match": {
+          "Path": "/api/permission-management/{**everything}"
+        }
+      },
+      "setting-management-route": {
+        "ClusterId": "administrationCluster",
+        "Match": {
+          "Path": "/api/setting-management/{**everything}"
+        }
+      },
+      "abp-route": {
+        "ClusterId": "administrationCluster",
+        "Match": {
+          "Path": "/api/abp/{**everything}"
+        }
+      },
+      "one-route": {
+        "ClusterId": "administrationCluster",
+        "Match": {
+          "Path": "/api/{**everything}"
+        }
+      }
+    },
+
+    "Clusters": {
+      "administrationCluster": {
+        "Destinations": {
+          "destination1": {
+            "Address": "http://localhost:44368"
+          }
+        }
+      }
+    }
+  }
+}

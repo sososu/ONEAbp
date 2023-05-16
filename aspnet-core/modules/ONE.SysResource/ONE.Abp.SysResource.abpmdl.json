@@ -1,0 +1,111 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {},
+      "host": {}
+    }
+  },
+  "packages": {
+    "ONE.Abp.SysResource.Domain.Shared": {
+      "path": "src/ONE.Abp.SysResource.Domain.Shared/ONE.Abp.SysResource.Domain.Shared.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.SysResource.Domain": {
+      "path": "src/ONE.Abp.SysResource.Domain/ONE.Abp.SysResource.Domain.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.SysResource.Application.Contracts": {
+      "path": "src/ONE.Abp.SysResource.Application.Contracts/ONE.Abp.SysResource.Application.Contracts.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.SysResource.Application": {
+      "path": "src/ONE.Abp.SysResource.Application/ONE.Abp.SysResource.Application.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.SysResource.EntityFrameworkCore": {
+      "path": "src/ONE.Abp.SysResource.EntityFrameworkCore/ONE.Abp.SysResource.EntityFrameworkCore.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.SysResource.MongoDB": {
+      "path": "src/ONE.Abp.SysResource.MongoDB/ONE.Abp.SysResource.MongoDB.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.SysResource.HttpApi": {
+      "path": "src/ONE.Abp.SysResource.HttpApi/ONE.Abp.SysResource.HttpApi.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.SysResource.HttpApi.Client": {
+      "path": "src/ONE.Abp.SysResource.HttpApi.Client/ONE.Abp.SysResource.HttpApi.Client.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.SysResource.TestBase": {
+      "path": "test/ONE.Abp.SysResource.TestBase/ONE.Abp.SysResource.TestBase.abppkg.json",
+      "folder": "test"
+    },
+    "ONE.Abp.SysResource.EntityFrameworkCore.Tests": {
+      "path": "test/ONE.Abp.SysResource.EntityFrameworkCore.Tests/ONE.Abp.SysResource.EntityFrameworkCore.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "ONE.Abp.SysResource.MongoDB.Tests": {
+      "path": "test/ONE.Abp.SysResource.MongoDB.Tests/ONE.Abp.SysResource.MongoDB.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "ONE.Abp.SysResource.Domain.Tests": {
+      "path": "test/ONE.Abp.SysResource.Domain.Tests/ONE.Abp.SysResource.Domain.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "ONE.Abp.SysResource.Application.Tests": {
+      "path": "test/ONE.Abp.SysResource.Application.Tests/ONE.Abp.SysResource.Application.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "ONE.Abp.SysResource.HttpApi.Host": {
+      "path": "host/ONE.Abp.SysResource.HttpApi.Host/ONE.Abp.SysResource.HttpApi.Host.abppkg.json",
+      "folder": "host"
+    },
+    "ONE.Abp.SysResource.Web": {
+      "path": "src/ONE.Abp.SysResource.Web/ONE.Abp.SysResource.Web.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.SysResource.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/ONE.Abp.SysResource.HttpApi.Client.ConsoleTestApp/ONE.Abp.SysResource.HttpApi.Client.ConsoleTestApp.abppkg.json",
+      "folder": "test"
+    },
+    "ONE.Abp.SysResource.Web.Host": {
+      "path": "host/ONE.Abp.SysResource.Web.Host/ONE.Abp.SysResource.Web.Host.abppkg.json",
+      "folder": "host"
+    },
+    "ONE.Abp.SysResource.AuthServer": {
+      "path": "host/ONE.Abp.SysResource.AuthServer/ONE.Abp.SysResource.AuthServer.abppkg.json",
+      "folder": "host"
+    },
+    "ONE.Abp.SysResource.Host.Shared": {
+      "path": "host/ONE.Abp.SysResource.Host.Shared/ONE.Abp.SysResource.Host.Shared.abppkg.json",
+      "folder": "host"
+    },
+    "ONE.Abp.SysResource.Web.Unified": {
+      "path": "host/ONE.Abp.SysResource.Web.Unified/ONE.Abp.SysResource.Web.Unified.abppkg.json",
+      "folder": "host"
+    },
+    "ONE.Abp.SysResource.Blazor": {
+      "path": "src/ONE.Abp.SysResource.Blazor/ONE.Abp.SysResource.Blazor.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.SysResource.Blazor.Host": {
+      "path": "host/ONE.Abp.SysResource.Blazor.Host/ONE.Abp.SysResource.Blazor.Host.abppkg.json",
+      "folder": "host"
+    },
+    "ONE.Abp.SysResource.Blazor.Server": {
+      "path": "src/ONE.Abp.SysResource.Blazor.Server/ONE.Abp.SysResource.Blazor.Server.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.SysResource.Blazor.WebAssembly": {
+      "path": "src/ONE.Abp.SysResource.Blazor.WebAssembly/ONE.Abp.SysResource.Blazor.WebAssembly.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.SysResource.Blazor.Server.Host": {
+      "path": "host/ONE.Abp.SysResource.Blazor.Server.Host/ONE.Abp.SysResource.Blazor.Server.Host.abppkg.json",
+      "folder": "host"
+    }
+  }
+}

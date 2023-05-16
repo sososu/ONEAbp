@@ -1,0 +1,20 @@
+{
+  "culture": "en",
+  "texts": {
+    "MyAccount": "My account",
+    "SamplePageMessage": "A sample page for the SysResource module",
+    "SysResource:1001": "SysApp Code should be unique. '{Code}' is already taken!",
+    "SysResource:1002": "SysMenu Code should be unique. '{Code}' is already taken!",
+    "SysResource:1003": "SaleVersion Name should be unique. '{Name}' is already taken!",
+    "SysResource:1004": "The permission resource '{perms}' does not exist",
+    "SysResource:1005": "The SysApp Code '{appCode}' does not exist",
+    "SysResource:1006": "Out of the scope of authorization",
+    "Permission:Menu": "Menu",
+    "Permission:Default": "Default",
+    "Permission:Create": "Create",
+    "Permission:Update": "Update",
+    "Permission:Enable": "Enable",
+    "Permission:Delete": "Delete",
+    "Permission:Authorization": "Authorization"
+  }
+}

@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<RootNamespace>ONE.Admin</RootNamespace>
+		
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\ONE.Admin.Domain\ONE.Admin.Domain.csproj" />
+		<ProjectReference Include="..\ONE.Admin.Application.Contracts\ONE.Admin.Application.Contracts.csproj" />
+		<ProjectReference Include="..\..\modules\ONE.SysResource\src\ONE.Abp.SysResource.Application\ONE.Abp.SysResource.Application.csproj" />
+		<ProjectReference Include="..\..\modules\ONE.DataDictionary\src\ONE.Abp.DataDictionary.Application\ONE.Abp.DataDictionary.Application.csproj" />
+		<ProjectReference Include="..\..\modules\ONE.DataPermission\src\ONE.Abp.DataPermission.Application\ONE.Abp.DataPermission.Application.csproj" />
+		<ProjectReference Include="..\..\modules\ONE.FileManagement\src\ONE.Abp.FileManagement.Application\ONE.Abp.FileManagement.Application.csproj" />
+		<ProjectReference Include="..\..\framework\ONE.Abp\src\ONE.Abp.DataPermission.Extension\ONE.Abp.DataPermission.Extension.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\modules\Volo.Account\src\Volo.Abp.Account.Application\Volo.Abp.Account.Application.csproj" />
+		<ProjectReference Include="..\..\modules\Volo.Identity\src\Volo.Abp.Identity.Application\Volo.Abp.Identity.Application.csproj" />
+		<PackageReference Include="Volo.Abp.PermissionManagement.Application" Version="$(AbpVersion)" />
+		<ProjectReference Include="..\..\modules\Volo.TenantManagement\src\Volo.Abp.TenantManagement.Application\Volo.Abp.TenantManagement.Application.csproj" />
+		<PackageReference Include="Volo.Abp.FeatureManagement.Application" Version="$(AbpVersion)" />
+		<PackageReference Include="Volo.Abp.SettingManagement.Application" Version="$(AbpVersion)" />
+	</ItemGroup>
+
+</Project>

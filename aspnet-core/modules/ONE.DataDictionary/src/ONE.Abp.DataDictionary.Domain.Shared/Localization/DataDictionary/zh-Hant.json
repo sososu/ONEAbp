@@ -1,0 +1,18 @@
+{
+  "culture": "zh-Hant",
+  "texts": {
+    "MyAccount": "我的賬戶",
+    "SamplePageMessage": "DataDictionary 模塊的示例頁面",
+    "DataDictionary:1001": "枚举来源值不能删除",
+    "DataDictionary:1002": "枚举来源值不能编辑",
+    "DataDictionary:1003": "枚举来源编码不能编辑",
+    "DataDictionary:1004": "字典值'{Value}'已存在",
+    "DataDictionary:1005": "字典编码'{Code}'已存在",
+    "DataDictionary:1006": "字典名称'{Name}'已存在",
+    "Permission:Default": "默认",
+    "Permission:Create": "创建",
+    "Permission:Update": "编辑",
+    "Permission:Enable": "启用",
+    "Permission:Delete": "删除"
+  }
+}

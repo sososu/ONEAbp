@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\..\common.props" />
+
+	<PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+	<ItemGroup>
+	  <Folder Include="Volo\Abp\OpenIddict\Applications\" />
+	  <Folder Include="Volo\Abp\OpenIddict\Authorizations\" />
+	  <Folder Include="Volo\Abp\OpenIddict\Scopes\" />
+	  <Folder Include="Volo\Abp\OpenIddict\Tokens\" />
+	</ItemGroup>
+
+</Project>

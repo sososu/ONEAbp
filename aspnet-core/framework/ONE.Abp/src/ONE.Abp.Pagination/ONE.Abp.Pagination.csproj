@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="..\..\..\..\common.props" />
+  <PropertyGroup>
+	  <TargetFramework>net7.0</TargetFramework>
+	  <ImplicitUsings>enable</ImplicitUsings>
+	  <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="$(MicrosoftVersion)" />
+    <PackageReference Include="Volo.Abp.AutoMapper" Version="$(AbpVersion)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ONE.Abp.Data\ONE.Abp.Data.csproj" />
+    <ProjectReference Include="..\ONE.Abp.Pagination.Contracts\ONE.Abp.Pagination.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

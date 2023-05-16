@@ -1,0 +1,21 @@
+{
+  "culture": "zh-Hans",
+  "texts": {
+    "MyAccount": "我的账户",
+    "SamplePageMessage": "SysResource模块的示例页面",
+    "SysResource:NotExistSysAppCode": "应用编码不存在",
+    "SysResource:1001": "应用编码应该唯一,'{Code}'已存在",
+    "SysResource:1002": "菜单编码应该唯一,'{Code}'已存在",
+    "SysResource:1003": "销售名称应该唯一,'{Name}'已存在",
+    "SysResource:1004": "权限资源'{perms}'不存在",
+    "SysResource:1005": "应用编码'{appCode}'不存在",
+    "SysResource:1006": "超出授权范围",
+    "Permission:Default": "默认",
+    "Permission:Create": "创建",
+    "Permission:Update": "编辑",
+    "Permission:Enable": "启用",
+    "Permission:Delete": "删除",
+    "Permission:Menu": "菜单",
+    "Permission:Authorization": "授权"
+  }
+}

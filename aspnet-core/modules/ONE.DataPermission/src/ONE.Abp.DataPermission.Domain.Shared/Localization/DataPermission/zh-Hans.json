@@ -1,0 +1,17 @@
+{
+  "culture": "zh-Hans",
+  "texts": {
+    "MyAccount": "我的账户",
+    "SamplePageMessage": "DataPermission模块的示例页面",
+    "DataPermission:1001": "规则已存在",
+    "DataPermission:1002": "数据对象不一致",
+    "DataPermission:1003": "数据对象-用户规则-数据规则应该唯一，'{dataTarget}-{userRuleId}-{dataRuleId}' 用户规则已存在",
+    "DataPermission:1004": "数据规则名称应该唯一,'{Name}'已存在",
+    "DataPermission:1005": "用户规则名称应该唯一,'{Name}'已存在",
+    "Permission:Default": "默认",
+    "Permission:Create": "创建",
+    "Permission:Update": "编辑",
+    "Permission:Enable": "启用",
+    "Permission:Delete": "删除"
+  }
+}

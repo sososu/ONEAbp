@@ -1,0 +1,484 @@
+{
+  "modules": {
+    "fileManagement": {
+      "rootPath": "fileManagement",
+      "remoteServiceName": "AbpFileManagement",
+      "controllers": {
+        "ONE.Abp.FileManagement.Files.FileController": {
+          "controllerName": "File",
+          "controllerGroupName": "File",
+          "isRemoteService": true,
+          "isIntegrationService": false,
+          "apiVersion": null,
+          "type": "ONE.Abp.FileManagement.Files.FileController",
+          "interfaces": [
+            {
+              "type": "ONE.Abp.FileManagement.Files.IFileAppService",
+              "name": "IFileAppService",
+              "methods": [
+                {
+                  "name": "QueryPageAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "input",
+                      "typeAsString": "ONE.Abp.FileManagement.Files.FileQueryInput, ONE.Abp.FileManagement.Application.Contracts",
+                      "type": "ONE.Abp.FileManagement.Files.FileQueryInput",
+                      "typeSimple": "ONE.Abp.FileManagement.Files.FileQueryInput",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "ONE.Abp.Pagination.Contracts.Dtos.PagedResult<ONE.Abp.FileManagement.Files.FileRecordDto>",
+                    "typeSimple": "ONE.Abp.Pagination.Contracts.Dtos.PagedResult<ONE.Abp.FileManagement.Files.FileRecordDto>"
+                  }
+                },
+                {
+                  "name": "GetStatisticsAsync",
+                  "parametersOnMethod": [],
+                  "returnValue": {
+                    "type": "ONE.Abp.FileManagement.Files.FileStatisticsDto",
+                    "typeSimple": "ONE.Abp.FileManagement.Files.FileStatisticsDto"
+                  }
+                },
+                {
+                  "name": "GetAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "name",
+                      "typeAsString": "System.String, System.Private.CoreLib",
+                      "type": "System.String",
+                      "typeSimple": "string",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "ONE.Abp.FileManagement.Files.RawFileDto",
+                    "typeSimple": "ONE.Abp.FileManagement.Files.RawFileDto"
+                  }
+                },
+                {
+                  "name": "GetFileStreamAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "name",
+                      "typeAsString": "System.String, System.Private.CoreLib",
+                      "type": "System.String",
+                      "typeSimple": "string",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "Volo.Abp.Content.IRemoteStreamContent",
+                    "typeSimple": "Volo.Abp.Content.IRemoteStreamContent"
+                  }
+                },
+                {
+                  "name": "DeleteAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "name",
+                      "typeAsString": "System.String, System.Private.CoreLib",
+                      "type": "System.String",
+                      "typeSimple": "string",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "System.Boolean",
+                    "typeSimple": "boolean"
+                  }
+                },
+                {
+                  "name": "CreateAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "input",
+                      "typeAsString": "ONE.Abp.FileManagement.Files.FileUploadInputDto, ONE.Abp.FileManagement.Application.Contracts",
+                      "type": "ONE.Abp.FileManagement.Files.FileUploadInputDto",
+                      "typeSimple": "ONE.Abp.FileManagement.Files.FileUploadInputDto",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "ONE.Abp.FileManagement.Files.FileUploadOutputDto",
+                    "typeSimple": "ONE.Abp.FileManagement.Files.FileUploadOutputDto"
+                  }
+                },
+                {
+                  "name": "DownloadFileAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "name",
+                      "typeAsString": "System.String, System.Private.CoreLib",
+                      "type": "System.String",
+                      "typeSimple": "string",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "Volo.Abp.Content.IRemoteStreamContent",
+                    "typeSimple": "Volo.Abp.Content.IRemoteStreamContent"
+                  }
+                }
+              ]
+            }
+          ],
+          "actions": {
+            "CreateAsyncByInput": {
+              "uniqueName": "CreateAsyncByInput",
+              "name": "CreateAsync",
+              "httpMethod": "POST",
+              "url": "api/file-management/file",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "input",
+                  "typeAsString": "ONE.Abp.FileManagement.Files.FileUploadInputDto, ONE.Abp.FileManagement.Application.Contracts",
+                  "type": "ONE.Abp.FileManagement.Files.FileUploadInputDto",
+                  "typeSimple": "ONE.Abp.FileManagement.Files.FileUploadInputDto",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "input",
+                  "name": "File",
+                  "jsonName": null,
+                  "type": "Volo.Abp.Content.IRemoteStreamContent",
+                  "typeSimple": "Volo.Abp.Content.IRemoteStreamContent",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "FormFile",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "Tag",
+                  "jsonName": null,
+                  "type": "System.String",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "Form",
+                  "descriptorName": "input"
+                }
+              ],
+              "returnValue": {
+                "type": "ONE.Abp.FileManagement.Files.FileUploadOutputDto",
+                "typeSimple": "ONE.Abp.FileManagement.Files.FileUploadOutputDto"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.FileManagement.Files.IFileAppService"
+            },
+            "DeleteAsyncByName": {
+              "uniqueName": "DeleteAsyncByName",
+              "name": "DeleteAsync",
+              "httpMethod": "DELETE",
+              "url": "api/file-management/file/{name}",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "name",
+                  "typeAsString": "System.String, System.Private.CoreLib",
+                  "type": "System.String",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "name",
+                  "name": "name",
+                  "jsonName": null,
+                  "type": "System.String",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": [],
+                  "bindingSourceId": "Path",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "System.Boolean",
+                "typeSimple": "boolean"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.FileManagement.Files.IFileAppService"
+            },
+            "DownloadFileAsyncByName": {
+              "uniqueName": "DownloadFileAsyncByName",
+              "name": "DownloadFileAsync",
+              "httpMethod": "POST",
+              "url": "api/file-management/file/download",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "name",
+                  "typeAsString": "System.String, System.Private.CoreLib",
+                  "type": "System.String",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "name",
+                  "name": "name",
+                  "jsonName": null,
+                  "type": "System.String",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "Volo.Abp.Content.IRemoteStreamContent",
+                "typeSimple": "Volo.Abp.Content.IRemoteStreamContent"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.FileManagement.Files.IFileAppService"
+            },
+            "GetAsyncByName": {
+              "uniqueName": "GetAsyncByName",
+              "name": "GetAsync",
+              "httpMethod": "GET",
+              "url": "api/file-management/file/{name}",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "name",
+                  "typeAsString": "System.String, System.Private.CoreLib",
+                  "type": "System.String",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "name",
+                  "name": "name",
+                  "jsonName": null,
+                  "type": "System.String",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": [],
+                  "bindingSourceId": "Path",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "ONE.Abp.FileManagement.Files.RawFileDto",
+                "typeSimple": "ONE.Abp.FileManagement.Files.RawFileDto"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.FileManagement.Files.IFileAppService"
+            },
+            "GetFileStreamAsyncByName": {
+              "uniqueName": "GetFileStreamAsyncByName",
+              "name": "GetFileStreamAsync",
+              "httpMethod": "GET",
+              "url": "api/file-management/file/stream/{name}",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "name",
+                  "typeAsString": "System.String, System.Private.CoreLib",
+                  "type": "System.String",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "name",
+                  "name": "name",
+                  "jsonName": null,
+                  "type": "System.String",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": [],
+                  "bindingSourceId": "Path",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "Volo.Abp.Content.IRemoteStreamContent",
+                "typeSimple": "Volo.Abp.Content.IRemoteStreamContent"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.FileManagement.Files.IFileAppService"
+            },
+            "GetStatisticsAsync": {
+              "uniqueName": "GetStatisticsAsync",
+              "name": "GetStatisticsAsync",
+              "httpMethod": "GET",
+              "url": "api/file-management/file/statistics",
+              "supportedVersions": [],
+              "parametersOnMethod": [],
+              "parameters": [],
+              "returnValue": {
+                "type": "ONE.Abp.FileManagement.Files.FileStatisticsDto",
+                "typeSimple": "ONE.Abp.FileManagement.Files.FileStatisticsDto"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.FileManagement.Files.IFileAppService"
+            },
+            "QueryPageAsyncByInput": {
+              "uniqueName": "QueryPageAsyncByInput",
+              "name": "QueryPageAsync",
+              "httpMethod": "GET",
+              "url": "api/file-management/file/page",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "input",
+                  "typeAsString": "ONE.Abp.FileManagement.Files.FileQueryInput, ONE.Abp.FileManagement.Application.Contracts",
+                  "type": "ONE.Abp.FileManagement.Files.FileQueryInput",
+                  "typeSimple": "ONE.Abp.FileManagement.Files.FileQueryInput",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "input",
+                  "name": "OriginalFileName",
+                  "jsonName": null,
+                  "type": "System.String",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "FileName",
+                  "jsonName": null,
+                  "type": "System.String",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "Tag",
+                  "jsonName": null,
+                  "type": "System.String",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "Start",
+                  "jsonName": null,
+                  "type": "System.DateTime?",
+                  "typeSimple": "string?",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "End",
+                  "jsonName": null,
+                  "type": "System.DateTime?",
+                  "typeSimple": "string?",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "FileType",
+                  "jsonName": null,
+                  "type": "System.String",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "PageIndex",
+                  "jsonName": null,
+                  "type": "System.Int32",
+                  "typeSimple": "number",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "PageSize",
+                  "jsonName": null,
+                  "type": "System.Int32",
+                  "typeSimple": "number",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "SortFields",
+                  "jsonName": null,
+                  "type": "System.Collections.Generic.IList<System.String>",
+                  "typeSimple": "[string]",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                }
+              ],
+              "returnValue": {
+                "type": "ONE.Abp.Pagination.Contracts.Dtos.PagedResult<ONE.Abp.FileManagement.Files.FileRecordDto>",
+                "typeSimple": "ONE.Abp.Pagination.Contracts.Dtos.PagedResult<ONE.Abp.FileManagement.Files.FileRecordDto>"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.FileManagement.Files.IFileAppService"
+            }
+          }
+        }
+      }
+    }
+  },
+  "types": {}
+}

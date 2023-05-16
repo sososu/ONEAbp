@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<RootNamespace>ONE.Abp.DataPermission</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.AutoMapper" Version="$(AbpVersion)" />
+		<PackageReference Include="Volo.Abp.Ddd.Domain" Version="$(AbpVersion)" />
+		<ProjectReference Include="..\ONE.Abp.DataPermission.Domain.Shared\ONE.Abp.DataPermission.Domain.Shared.csproj" />
+		<ProjectReference Include="..\..\..\..\framework\ONE.Abp\src\ONE.Abp.DataPermission\ONE.Abp.DataPermission.csproj" />
+		<ProjectReference Include="..\..\..\..\framework\ONE.Abp\src\ONE.Abp.Data\ONE.Abp.Data.csproj" />
+	</ItemGroup>
+
+</Project>

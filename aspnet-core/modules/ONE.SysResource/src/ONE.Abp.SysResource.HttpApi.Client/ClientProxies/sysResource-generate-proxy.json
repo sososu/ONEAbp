@@ -1,0 +1,1417 @@
+{
+  "modules": {
+    "sysResource": {
+      "rootPath": "sysResource",
+      "remoteServiceName": "AbpSysResource",
+      "controllers": {
+        "ONE.Abp.SysResource.SysMenus.SysMenuController": {
+          "controllerName": "SysMenu",
+          "controllerGroupName": "SysMenu",
+          "isRemoteService": true,
+          "isIntegrationService": false,
+          "apiVersion": null,
+          "type": "ONE.Abp.SysResource.SysMenus.SysMenuController",
+          "interfaces": [
+            {
+              "type": "ONE.Abp.SysResource.SysMenus.ISysMenuAppService",
+              "name": "ISysMenuAppService",
+              "methods": [
+                {
+                  "name": "CreateAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "input",
+                      "typeAsString": "ONE.Abp.SysResource.SysMenus.SysMenuCreateInput, ONE.Abp.SysResource.Application.Contracts",
+                      "type": "ONE.Abp.SysResource.SysMenus.SysMenuCreateInput",
+                      "typeSimple": "ONE.Abp.SysResource.SysMenus.SysMenuCreateInput",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "System.Void",
+                    "typeSimple": "System.Void"
+                  }
+                },
+                {
+                  "name": "UpdateAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "id",
+                      "typeAsString": "System.Guid, System.Private.CoreLib",
+                      "type": "System.Guid",
+                      "typeSimple": "string",
+                      "isOptional": false,
+                      "defaultValue": null
+                    },
+                    {
+                      "name": "input",
+                      "typeAsString": "ONE.Abp.SysResource.SysMenus.SysMenuUpdateInput, ONE.Abp.SysResource.Application.Contracts",
+                      "type": "ONE.Abp.SysResource.SysMenus.SysMenuUpdateInput",
+                      "typeSimple": "ONE.Abp.SysResource.SysMenus.SysMenuUpdateInput",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "System.Void",
+                    "typeSimple": "System.Void"
+                  }
+                },
+                {
+                  "name": "GetAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "id",
+                      "typeAsString": "System.Guid, System.Private.CoreLib",
+                      "type": "System.Guid",
+                      "typeSimple": "string",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "ONE.Abp.SysResource.SysMenus.SysMenuDto",
+                    "typeSimple": "ONE.Abp.SysResource.SysMenus.SysMenuDto"
+                  }
+                },
+                {
+                  "name": "DeleteAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "id",
+                      "typeAsString": "System.Guid, System.Private.CoreLib",
+                      "type": "System.Guid",
+                      "typeSimple": "string",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "System.Void",
+                    "typeSimple": "System.Void"
+                  }
+                },
+                {
+                  "name": "QueryPageAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "input",
+                      "typeAsString": "ONE.Abp.SysResource.SysMenus.SysMenuQuery, ONE.Abp.SysResource.Application.Contracts",
+                      "type": "ONE.Abp.SysResource.SysMenus.SysMenuQuery",
+                      "typeSimple": "ONE.Abp.SysResource.SysMenus.SysMenuQuery",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "ONE.Abp.Pagination.Contracts.Dtos.PagedResult<ONE.Abp.SysResource.SysMenus.SysMenuDto>",
+                    "typeSimple": "ONE.Abp.Pagination.Contracts.Dtos.PagedResult<ONE.Abp.SysResource.SysMenus.SysMenuDto>"
+                  }
+                },
+                {
+                  "name": "GetListByAppIdAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "appId",
+                      "typeAsString": "System.Guid, System.Private.CoreLib",
+                      "type": "System.Guid",
+                      "typeSimple": "string",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.SysResource.SysMenus.SysMenuDto>",
+                    "typeSimple": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.SysResource.SysMenus.SysMenuDto>"
+                  }
+                },
+                {
+                  "name": "GetListByAppCodeAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "appCode",
+                      "typeAsString": "System.String, System.Private.CoreLib",
+                      "type": "System.String",
+                      "typeSimple": "string",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.SysResource.SysMenus.SysMenuDto>",
+                    "typeSimple": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.SysResource.SysMenus.SysMenuDto>"
+                  }
+                }
+              ]
+            }
+          ],
+          "actions": {
+            "CreateAsyncByInput": {
+              "uniqueName": "CreateAsyncByInput",
+              "name": "CreateAsync",
+              "httpMethod": "POST",
+              "url": "api/sys-resource/menu",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "input",
+                  "typeAsString": "ONE.Abp.SysResource.SysMenus.SysMenuCreateInput, ONE.Abp.SysResource.Application.Contracts",
+                  "type": "ONE.Abp.SysResource.SysMenus.SysMenuCreateInput",
+                  "typeSimple": "ONE.Abp.SysResource.SysMenus.SysMenuCreateInput",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "input",
+                  "name": "input",
+                  "jsonName": null,
+                  "type": "ONE.Abp.SysResource.SysMenus.SysMenuCreateInput",
+                  "typeSimple": "ONE.Abp.SysResource.SysMenus.SysMenuCreateInput",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "Body",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "System.Void",
+                "typeSimple": "System.Void"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.SysResource.SysMenus.ISysMenuAppService"
+            },
+            "UpdateAsyncByIdAndInput": {
+              "uniqueName": "UpdateAsyncByIdAndInput",
+              "name": "UpdateAsync",
+              "httpMethod": "PUT",
+              "url": "api/sys-resource/menu/{id}",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "id",
+                  "typeAsString": "System.Guid, System.Private.CoreLib",
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null
+                },
+                {
+                  "name": "input",
+                  "typeAsString": "ONE.Abp.SysResource.SysMenus.SysMenuUpdateInput, ONE.Abp.SysResource.Application.Contracts",
+                  "type": "ONE.Abp.SysResource.SysMenus.SysMenuUpdateInput",
+                  "typeSimple": "ONE.Abp.SysResource.SysMenus.SysMenuUpdateInput",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "id",
+                  "name": "id",
+                  "jsonName": null,
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": [],
+                  "bindingSourceId": "Path",
+                  "descriptorName": ""
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "input",
+                  "jsonName": null,
+                  "type": "ONE.Abp.SysResource.SysMenus.SysMenuUpdateInput",
+                  "typeSimple": "ONE.Abp.SysResource.SysMenus.SysMenuUpdateInput",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "Body",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "System.Void",
+                "typeSimple": "System.Void"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.SysResource.SysMenus.ISysMenuAppService"
+            },
+            "DeleteAsyncById": {
+              "uniqueName": "DeleteAsyncById",
+              "name": "DeleteAsync",
+              "httpMethod": "DELETE",
+              "url": "api/sys-resource/menu/{id}",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "id",
+                  "typeAsString": "System.Guid, System.Private.CoreLib",
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "id",
+                  "name": "id",
+                  "jsonName": null,
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": [],
+                  "bindingSourceId": "Path",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "System.Void",
+                "typeSimple": "System.Void"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.SysResource.SysMenus.ISysMenuAppService"
+            },
+            "GetAsyncById": {
+              "uniqueName": "GetAsyncById",
+              "name": "GetAsync",
+              "httpMethod": "GET",
+              "url": "api/sys-resource/menu/{id}",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "id",
+                  "typeAsString": "System.Guid, System.Private.CoreLib",
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "id",
+                  "name": "id",
+                  "jsonName": null,
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": [],
+                  "bindingSourceId": "Path",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "ONE.Abp.SysResource.SysMenus.SysMenuDto",
+                "typeSimple": "ONE.Abp.SysResource.SysMenus.SysMenuDto"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.SysResource.SysMenus.ISysMenuAppService"
+            },
+            "QueryPageAsyncByInput": {
+              "uniqueName": "QueryPageAsyncByInput",
+              "name": "QueryPageAsync",
+              "httpMethod": "GET",
+              "url": "api/sys-resource/menu/page",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "input",
+                  "typeAsString": "ONE.Abp.SysResource.SysMenus.SysMenuQuery, ONE.Abp.SysResource.Application.Contracts",
+                  "type": "ONE.Abp.SysResource.SysMenus.SysMenuQuery",
+                  "typeSimple": "ONE.Abp.SysResource.SysMenus.SysMenuQuery",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "input",
+                  "name": "Name",
+                  "jsonName": null,
+                  "type": "System.String",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "Code",
+                  "jsonName": null,
+                  "type": "System.String",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "PageIndex",
+                  "jsonName": null,
+                  "type": "System.Int32",
+                  "typeSimple": "number",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "PageSize",
+                  "jsonName": null,
+                  "type": "System.Int32",
+                  "typeSimple": "number",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "SortFields",
+                  "jsonName": null,
+                  "type": "System.Collections.Generic.IList<System.String>",
+                  "typeSimple": "[string]",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                }
+              ],
+              "returnValue": {
+                "type": "ONE.Abp.Pagination.Contracts.Dtos.PagedResult<ONE.Abp.SysResource.SysMenus.SysMenuDto>",
+                "typeSimple": "ONE.Abp.Pagination.Contracts.Dtos.PagedResult<ONE.Abp.SysResource.SysMenus.SysMenuDto>"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.SysResource.SysMenus.ISysMenuAppService"
+            },
+            "GetListByAppCodeAsyncByAppCode": {
+              "uniqueName": "GetListByAppCodeAsyncByAppCode",
+              "name": "GetListByAppCodeAsync",
+              "httpMethod": "GET",
+              "url": "api/sys-resource/menu/by-appcode",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "appCode",
+                  "typeAsString": "System.String, System.Private.CoreLib",
+                  "type": "System.String",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "appCode",
+                  "name": "appCode",
+                  "jsonName": null,
+                  "type": "System.String",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.SysResource.SysMenus.SysMenuDto>",
+                "typeSimple": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.SysResource.SysMenus.SysMenuDto>"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.SysResource.SysMenus.ISysMenuAppService"
+            },
+            "GetListByAppIdAsyncByAppId": {
+              "uniqueName": "GetListByAppIdAsyncByAppId",
+              "name": "GetListByAppIdAsync",
+              "httpMethod": "GET",
+              "url": "api/sys-resource/menu/by-appid",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "appId",
+                  "typeAsString": "System.Guid, System.Private.CoreLib",
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "appId",
+                  "name": "appId",
+                  "jsonName": null,
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.SysResource.SysMenus.SysMenuDto>",
+                "typeSimple": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.SysResource.SysMenus.SysMenuDto>"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.SysResource.SysMenus.ISysMenuAppService"
+            }
+          }
+        },
+        "ONE.Abp.SysResource.SysApps.SysAppController": {
+          "controllerName": "SysApp",
+          "controllerGroupName": "SysApp",
+          "isRemoteService": true,
+          "isIntegrationService": false,
+          "apiVersion": null,
+          "type": "ONE.Abp.SysResource.SysApps.SysAppController",
+          "interfaces": [
+            {
+              "type": "ONE.Abp.SysResource.SysApps.ISysAppAppService",
+              "name": "ISysAppAppService",
+              "methods": [
+                {
+                  "name": "CreateAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "input",
+                      "typeAsString": "ONE.Abp.SysResource.SysApps.SysAppCreateInput, ONE.Abp.SysResource.Application.Contracts",
+                      "type": "ONE.Abp.SysResource.SysApps.SysAppCreateInput",
+                      "typeSimple": "ONE.Abp.SysResource.SysApps.SysAppCreateInput",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "System.Void",
+                    "typeSimple": "System.Void"
+                  }
+                },
+                {
+                  "name": "UpdateAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "id",
+                      "typeAsString": "System.Guid, System.Private.CoreLib",
+                      "type": "System.Guid",
+                      "typeSimple": "string",
+                      "isOptional": false,
+                      "defaultValue": null
+                    },
+                    {
+                      "name": "input",
+                      "typeAsString": "ONE.Abp.SysResource.SysApps.SysAppUpdateInput, ONE.Abp.SysResource.Application.Contracts",
+                      "type": "ONE.Abp.SysResource.SysApps.SysAppUpdateInput",
+                      "typeSimple": "ONE.Abp.SysResource.SysApps.SysAppUpdateInput",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "System.Void",
+                    "typeSimple": "System.Void"
+                  }
+                },
+                {
+                  "name": "GetAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "id",
+                      "typeAsString": "System.Guid, System.Private.CoreLib",
+                      "type": "System.Guid",
+                      "typeSimple": "string",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "ONE.Abp.SysResource.SysApps.SysAppDto",
+                    "typeSimple": "ONE.Abp.SysResource.SysApps.SysAppDto"
+                  }
+                },
+                {
+                  "name": "DeleteAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "id",
+                      "typeAsString": "System.Guid, System.Private.CoreLib",
+                      "type": "System.Guid",
+                      "typeSimple": "string",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "System.Void",
+                    "typeSimple": "System.Void"
+                  }
+                },
+                {
+                  "name": "QueryPageAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "input",
+                      "typeAsString": "ONE.Abp.SysResource.SysApps.SysAppQuery, ONE.Abp.SysResource.Application.Contracts",
+                      "type": "ONE.Abp.SysResource.SysApps.SysAppQuery",
+                      "typeSimple": "ONE.Abp.SysResource.SysApps.SysAppQuery",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "ONE.Abp.Pagination.Contracts.Dtos.PagedResult<ONE.Abp.SysResource.SysApps.SysAppDto>",
+                    "typeSimple": "ONE.Abp.Pagination.Contracts.Dtos.PagedResult<ONE.Abp.SysResource.SysApps.SysAppDto>"
+                  }
+                }
+              ]
+            }
+          ],
+          "actions": {
+            "CreateAsyncByInput": {
+              "uniqueName": "CreateAsyncByInput",
+              "name": "CreateAsync",
+              "httpMethod": "POST",
+              "url": "api/sys-resource/app",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "input",
+                  "typeAsString": "ONE.Abp.SysResource.SysApps.SysAppCreateInput, ONE.Abp.SysResource.Application.Contracts",
+                  "type": "ONE.Abp.SysResource.SysApps.SysAppCreateInput",
+                  "typeSimple": "ONE.Abp.SysResource.SysApps.SysAppCreateInput",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "input",
+                  "name": "input",
+                  "jsonName": null,
+                  "type": "ONE.Abp.SysResource.SysApps.SysAppCreateInput",
+                  "typeSimple": "ONE.Abp.SysResource.SysApps.SysAppCreateInput",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "Body",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "System.Void",
+                "typeSimple": "System.Void"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.SysResource.SysApps.ISysAppAppService"
+            },
+            "UpdateAsyncByIdAndInput": {
+              "uniqueName": "UpdateAsyncByIdAndInput",
+              "name": "UpdateAsync",
+              "httpMethod": "PUT",
+              "url": "api/sys-resource/app/{id}",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "id",
+                  "typeAsString": "System.Guid, System.Private.CoreLib",
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null
+                },
+                {
+                  "name": "input",
+                  "typeAsString": "ONE.Abp.SysResource.SysApps.SysAppUpdateInput, ONE.Abp.SysResource.Application.Contracts",
+                  "type": "ONE.Abp.SysResource.SysApps.SysAppUpdateInput",
+                  "typeSimple": "ONE.Abp.SysResource.SysApps.SysAppUpdateInput",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "id",
+                  "name": "id",
+                  "jsonName": null,
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": [],
+                  "bindingSourceId": "Path",
+                  "descriptorName": ""
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "input",
+                  "jsonName": null,
+                  "type": "ONE.Abp.SysResource.SysApps.SysAppUpdateInput",
+                  "typeSimple": "ONE.Abp.SysResource.SysApps.SysAppUpdateInput",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "Body",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "System.Void",
+                "typeSimple": "System.Void"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.SysResource.SysApps.ISysAppAppService"
+            },
+            "DeleteAsyncById": {
+              "uniqueName": "DeleteAsyncById",
+              "name": "DeleteAsync",
+              "httpMethod": "DELETE",
+              "url": "api/sys-resource/app/{id}",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "id",
+                  "typeAsString": "System.Guid, System.Private.CoreLib",
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "id",
+                  "name": "id",
+                  "jsonName": null,
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": [],
+                  "bindingSourceId": "Path",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "System.Void",
+                "typeSimple": "System.Void"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.SysResource.SysApps.ISysAppAppService"
+            },
+            "GetAsyncById": {
+              "uniqueName": "GetAsyncById",
+              "name": "GetAsync",
+              "httpMethod": "GET",
+              "url": "api/sys-resource/app/{id}",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "id",
+                  "typeAsString": "System.Guid, System.Private.CoreLib",
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "id",
+                  "name": "id",
+                  "jsonName": null,
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": [],
+                  "bindingSourceId": "Path",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "ONE.Abp.SysResource.SysApps.SysAppDto",
+                "typeSimple": "ONE.Abp.SysResource.SysApps.SysAppDto"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.SysResource.SysApps.ISysAppAppService"
+            },
+            "QueryPageAsyncByInput": {
+              "uniqueName": "QueryPageAsyncByInput",
+              "name": "QueryPageAsync",
+              "httpMethod": "GET",
+              "url": "api/sys-resource/app/page",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "input",
+                  "typeAsString": "ONE.Abp.SysResource.SysApps.SysAppQuery, ONE.Abp.SysResource.Application.Contracts",
+                  "type": "ONE.Abp.SysResource.SysApps.SysAppQuery",
+                  "typeSimple": "ONE.Abp.SysResource.SysApps.SysAppQuery",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "input",
+                  "name": "AppName",
+                  "jsonName": null,
+                  "type": "System.String",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "AppCode",
+                  "jsonName": null,
+                  "type": "System.String",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "PageIndex",
+                  "jsonName": null,
+                  "type": "System.Int32",
+                  "typeSimple": "number",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "PageSize",
+                  "jsonName": null,
+                  "type": "System.Int32",
+                  "typeSimple": "number",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "SortFields",
+                  "jsonName": null,
+                  "type": "System.Collections.Generic.IList<System.String>",
+                  "typeSimple": "[string]",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                }
+              ],
+              "returnValue": {
+                "type": "ONE.Abp.Pagination.Contracts.Dtos.PagedResult<ONE.Abp.SysResource.SysApps.SysAppDto>",
+                "typeSimple": "ONE.Abp.Pagination.Contracts.Dtos.PagedResult<ONE.Abp.SysResource.SysApps.SysAppDto>"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.SysResource.SysApps.ISysAppAppService"
+            }
+          }
+        },
+        "ONE.Abp.SysResource.SaleVersions.SaleVersionController": {
+          "controllerName": "SaleVersion",
+          "controllerGroupName": "SaleVersion",
+          "isRemoteService": true,
+          "isIntegrationService": false,
+          "apiVersion": null,
+          "type": "ONE.Abp.SysResource.SaleVersions.SaleVersionController",
+          "interfaces": [
+            {
+              "type": "ONE.Abp.SysResource.SaleVersions.ISaleVersionAppService",
+              "name": "ISaleVersionAppService",
+              "methods": [
+                {
+                  "name": "CreateAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "input",
+                      "typeAsString": "ONE.Abp.SysResource.SaleVersions.SaleVersionCreateInput, ONE.Abp.SysResource.Application.Contracts",
+                      "type": "ONE.Abp.SysResource.SaleVersions.SaleVersionCreateInput",
+                      "typeSimple": "ONE.Abp.SysResource.SaleVersions.SaleVersionCreateInput",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "System.Void",
+                    "typeSimple": "System.Void"
+                  }
+                },
+                {
+                  "name": "UpdateAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "id",
+                      "typeAsString": "System.Guid, System.Private.CoreLib",
+                      "type": "System.Guid",
+                      "typeSimple": "string",
+                      "isOptional": false,
+                      "defaultValue": null
+                    },
+                    {
+                      "name": "input",
+                      "typeAsString": "ONE.Abp.SysResource.SaleVersions.SaleVersionUpdateInput, ONE.Abp.SysResource.Application.Contracts",
+                      "type": "ONE.Abp.SysResource.SaleVersions.SaleVersionUpdateInput",
+                      "typeSimple": "ONE.Abp.SysResource.SaleVersions.SaleVersionUpdateInput",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "System.Void",
+                    "typeSimple": "System.Void"
+                  }
+                },
+                {
+                  "name": "GetAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "id",
+                      "typeAsString": "System.Guid, System.Private.CoreLib",
+                      "type": "System.Guid",
+                      "typeSimple": "string",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "ONE.Abp.SysResource.SaleVersions.SaleVersionDto",
+                    "typeSimple": "ONE.Abp.SysResource.SaleVersions.SaleVersionDto"
+                  }
+                },
+                {
+                  "name": "DeleteAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "id",
+                      "typeAsString": "System.Guid, System.Private.CoreLib",
+                      "type": "System.Guid",
+                      "typeSimple": "string",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "System.Void",
+                    "typeSimple": "System.Void"
+                  }
+                },
+                {
+                  "name": "QueryPageAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "input",
+                      "typeAsString": "ONE.Abp.SysResource.SaleVersions.SaleVersionQuery, ONE.Abp.SysResource.Application.Contracts",
+                      "type": "ONE.Abp.SysResource.SaleVersions.SaleVersionQuery",
+                      "typeSimple": "ONE.Abp.SysResource.SaleVersions.SaleVersionQuery",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "ONE.Abp.Pagination.Contracts.Dtos.PagedResult<ONE.Abp.SysResource.SaleVersions.SaleVersionDto>",
+                    "typeSimple": "ONE.Abp.Pagination.Contracts.Dtos.PagedResult<ONE.Abp.SysResource.SaleVersions.SaleVersionDto>"
+                  }
+                },
+                {
+                  "name": "SetMenusAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "id",
+                      "typeAsString": "System.Guid, System.Private.CoreLib",
+                      "type": "System.Guid",
+                      "typeSimple": "string",
+                      "isOptional": false,
+                      "defaultValue": null
+                    },
+                    {
+                      "name": "input",
+                      "typeAsString": "ONE.Abp.SysResource.SaleVersions.SaleVersionMenuEditInput, ONE.Abp.SysResource.Application.Contracts",
+                      "type": "ONE.Abp.SysResource.SaleVersions.SaleVersionMenuEditInput",
+                      "typeSimple": "ONE.Abp.SysResource.SaleVersions.SaleVersionMenuEditInput",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "System.Void",
+                    "typeSimple": "System.Void"
+                  }
+                },
+                {
+                  "name": "GetMenuTreeSelected",
+                  "parametersOnMethod": [
+                    {
+                      "name": "id",
+                      "typeAsString": "System.Guid, System.Private.CoreLib",
+                      "type": "System.Guid",
+                      "typeSimple": "string",
+                      "isOptional": false,
+                      "defaultValue": null
+                    },
+                    {
+                      "name": "appId",
+                      "typeAsString": "System.Guid, System.Private.CoreLib",
+                      "type": "System.Guid",
+                      "typeSimple": "string",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "ONE.Abp.SysResource.RoleMenus.GrantMenus",
+                    "typeSimple": "ONE.Abp.SysResource.RoleMenus.GrantMenus"
+                  }
+                },
+                {
+                  "name": "GetAppsAysnc",
+                  "parametersOnMethod": [
+                    {
+                      "name": "id",
+                      "typeAsString": "System.Guid, System.Private.CoreLib",
+                      "type": "System.Guid",
+                      "typeSimple": "string",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.SysResource.RoleMenus.GrantApps>",
+                    "typeSimple": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.SysResource.RoleMenus.GrantApps>"
+                  }
+                }
+              ]
+            }
+          ],
+          "actions": {
+            "CreateAsyncByInput": {
+              "uniqueName": "CreateAsyncByInput",
+              "name": "CreateAsync",
+              "httpMethod": "POST",
+              "url": "api/sys-resource/sale-version",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "input",
+                  "typeAsString": "ONE.Abp.SysResource.SaleVersions.SaleVersionCreateInput, ONE.Abp.SysResource.Application.Contracts",
+                  "type": "ONE.Abp.SysResource.SaleVersions.SaleVersionCreateInput",
+                  "typeSimple": "ONE.Abp.SysResource.SaleVersions.SaleVersionCreateInput",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "input",
+                  "name": "input",
+                  "jsonName": null,
+                  "type": "ONE.Abp.SysResource.SaleVersions.SaleVersionCreateInput",
+                  "typeSimple": "ONE.Abp.SysResource.SaleVersions.SaleVersionCreateInput",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "Body",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "System.Void",
+                "typeSimple": "System.Void"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.SysResource.SaleVersions.ISaleVersionAppService"
+            },
+            "UpdateAsyncByIdAndInput": {
+              "uniqueName": "UpdateAsyncByIdAndInput",
+              "name": "UpdateAsync",
+              "httpMethod": "PUT",
+              "url": "api/sys-resource/sale-version/{id}",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "id",
+                  "typeAsString": "System.Guid, System.Private.CoreLib",
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null
+                },
+                {
+                  "name": "input",
+                  "typeAsString": "ONE.Abp.SysResource.SaleVersions.SaleVersionUpdateInput, ONE.Abp.SysResource.Application.Contracts",
+                  "type": "ONE.Abp.SysResource.SaleVersions.SaleVersionUpdateInput",
+                  "typeSimple": "ONE.Abp.SysResource.SaleVersions.SaleVersionUpdateInput",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "id",
+                  "name": "id",
+                  "jsonName": null,
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": [],
+                  "bindingSourceId": "Path",
+                  "descriptorName": ""
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "input",
+                  "jsonName": null,
+                  "type": "ONE.Abp.SysResource.SaleVersions.SaleVersionUpdateInput",
+                  "typeSimple": "ONE.Abp.SysResource.SaleVersions.SaleVersionUpdateInput",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "Body",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "System.Void",
+                "typeSimple": "System.Void"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.SysResource.SaleVersions.ISaleVersionAppService"
+            },
+            "DeleteAsyncById": {
+              "uniqueName": "DeleteAsyncById",
+              "name": "DeleteAsync",
+              "httpMethod": "DELETE",
+              "url": "api/sys-resource/sale-version/{id}",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "id",
+                  "typeAsString": "System.Guid, System.Private.CoreLib",
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "id",
+                  "name": "id",
+                  "jsonName": null,
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": [],
+                  "bindingSourceId": "Path",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "System.Void",
+                "typeSimple": "System.Void"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.SysResource.SaleVersions.ISaleVersionAppService"
+            },
+            "GetAsyncById": {
+              "uniqueName": "GetAsyncById",
+              "name": "GetAsync",
+              "httpMethod": "GET",
+              "url": "api/sys-resource/sale-version/{id}",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "id",
+                  "typeAsString": "System.Guid, System.Private.CoreLib",
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "id",
+                  "name": "id",
+                  "jsonName": null,
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": [],
+                  "bindingSourceId": "Path",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "ONE.Abp.SysResource.SaleVersions.SaleVersionDto",
+                "typeSimple": "ONE.Abp.SysResource.SaleVersions.SaleVersionDto"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.SysResource.SaleVersions.ISaleVersionAppService"
+            },
+            "QueryPageAsyncByInput": {
+              "uniqueName": "QueryPageAsyncByInput",
+              "name": "QueryPageAsync",
+              "httpMethod": "GET",
+              "url": "api/sys-resource/sale-version/page",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "input",
+                  "typeAsString": "ONE.Abp.SysResource.SaleVersions.SaleVersionQuery, ONE.Abp.SysResource.Application.Contracts",
+                  "type": "ONE.Abp.SysResource.SaleVersions.SaleVersionQuery",
+                  "typeSimple": "ONE.Abp.SysResource.SaleVersions.SaleVersionQuery",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "input",
+                  "name": "Name",
+                  "jsonName": null,
+                  "type": "System.String",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "PageIndex",
+                  "jsonName": null,
+                  "type": "System.Int32",
+                  "typeSimple": "number",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "PageSize",
+                  "jsonName": null,
+                  "type": "System.Int32",
+                  "typeSimple": "number",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "SortFields",
+                  "jsonName": null,
+                  "type": "System.Collections.Generic.IList<System.String>",
+                  "typeSimple": "[string]",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                }
+              ],
+              "returnValue": {
+                "type": "ONE.Abp.Pagination.Contracts.Dtos.PagedResult<ONE.Abp.SysResource.SaleVersions.SaleVersionDto>",
+                "typeSimple": "ONE.Abp.Pagination.Contracts.Dtos.PagedResult<ONE.Abp.SysResource.SaleVersions.SaleVersionDto>"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.SysResource.SaleVersions.ISaleVersionAppService"
+            },
+            "GetMenuTreeSelectedByIdAndAppId": {
+              "uniqueName": "GetMenuTreeSelectedByIdAndAppId",
+              "name": "GetMenuTreeSelected",
+              "httpMethod": "GET",
+              "url": "api/sys-resource/sale-version/{id}/menus",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "id",
+                  "typeAsString": "System.Guid, System.Private.CoreLib",
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null
+                },
+                {
+                  "name": "appId",
+                  "typeAsString": "System.Guid, System.Private.CoreLib",
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "id",
+                  "name": "id",
+                  "jsonName": null,
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": [],
+                  "bindingSourceId": "Path",
+                  "descriptorName": ""
+                },
+                {
+                  "nameOnMethod": "appId",
+                  "name": "appId",
+                  "jsonName": null,
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "ONE.Abp.SysResource.RoleMenus.GrantMenus",
+                "typeSimple": "ONE.Abp.SysResource.RoleMenus.GrantMenus"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.SysResource.SaleVersions.ISaleVersionAppService"
+            },
+            "SetMenusAsyncByIdAndInput": {
+              "uniqueName": "SetMenusAsyncByIdAndInput",
+              "name": "SetMenusAsync",
+              "httpMethod": "PUT",
+              "url": "api/sys-resource/sale-version/{id}/menus",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "id",
+                  "typeAsString": "System.Guid, System.Private.CoreLib",
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null
+                },
+                {
+                  "name": "input",
+                  "typeAsString": "ONE.Abp.SysResource.SaleVersions.SaleVersionMenuEditInput, ONE.Abp.SysResource.Application.Contracts",
+                  "type": "ONE.Abp.SysResource.SaleVersions.SaleVersionMenuEditInput",
+                  "typeSimple": "ONE.Abp.SysResource.SaleVersions.SaleVersionMenuEditInput",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "id",
+                  "name": "id",
+                  "jsonName": null,
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": [],
+                  "bindingSourceId": "Path",
+                  "descriptorName": ""
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "input",
+                  "jsonName": null,
+                  "type": "ONE.Abp.SysResource.SaleVersions.SaleVersionMenuEditInput",
+                  "typeSimple": "ONE.Abp.SysResource.SaleVersions.SaleVersionMenuEditInput",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "Body",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "System.Void",
+                "typeSimple": "System.Void"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.SysResource.SaleVersions.ISaleVersionAppService"
+            },
+            "GetAppsAysncById": {
+              "uniqueName": "GetAppsAysncById",
+              "name": "GetAppsAysnc",
+              "httpMethod": "GET",
+              "url": "api/sys-resource/sale-version/{id}/apps",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "id",
+                  "typeAsString": "System.Guid, System.Private.CoreLib",
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "id",
+                  "name": "id",
+                  "jsonName": null,
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": [],
+                  "bindingSourceId": "Path",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.SysResource.RoleMenus.GrantApps>",
+                "typeSimple": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.SysResource.RoleMenus.GrantApps>"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.SysResource.SaleVersions.ISaleVersionAppService"
+            }
+          }
+        }
+      }
+    }
+  },
+  "types": {}
+}

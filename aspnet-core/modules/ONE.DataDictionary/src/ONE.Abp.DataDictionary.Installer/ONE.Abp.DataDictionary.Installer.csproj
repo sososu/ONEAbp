@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\..\common.props" />
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
+        <RootNamespace>ONE.Abp.DataDictionary</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Volo.Abp.VirtualFileSystem" Version="$(AbpVersion)" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="..\..\ONE.Abp.DataDictionary.abpmdl.json" />
+      <EmbeddedResource Include="..\..\ONE.Abp.DataDictionary.abpmdl.json" />
+    </ItemGroup>
+
+</Project>

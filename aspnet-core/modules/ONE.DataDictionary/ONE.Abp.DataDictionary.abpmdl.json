@@ -1,0 +1,111 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {},
+      "host": {}
+    }
+  },
+  "packages": {
+    "ONE.Abp.DataDictionary.Domain.Shared": {
+      "path": "src/ONE.Abp.DataDictionary.Domain.Shared/ONE.Abp.DataDictionary.Domain.Shared.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.DataDictionary.Domain": {
+      "path": "src/ONE.Abp.DataDictionary.Domain/ONE.Abp.DataDictionary.Domain.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.DataDictionary.Application.Contracts": {
+      "path": "src/ONE.Abp.DataDictionary.Application.Contracts/ONE.Abp.DataDictionary.Application.Contracts.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.DataDictionary.Application": {
+      "path": "src/ONE.Abp.DataDictionary.Application/ONE.Abp.DataDictionary.Application.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.DataDictionary.EntityFrameworkCore": {
+      "path": "src/ONE.Abp.DataDictionary.EntityFrameworkCore/ONE.Abp.DataDictionary.EntityFrameworkCore.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.DataDictionary.MongoDB": {
+      "path": "src/ONE.Abp.DataDictionary.MongoDB/ONE.Abp.DataDictionary.MongoDB.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.DataDictionary.HttpApi": {
+      "path": "src/ONE.Abp.DataDictionary.HttpApi/ONE.Abp.DataDictionary.HttpApi.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.DataDictionary.HttpApi.Client": {
+      "path": "src/ONE.Abp.DataDictionary.HttpApi.Client/ONE.Abp.DataDictionary.HttpApi.Client.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.DataDictionary.TestBase": {
+      "path": "test/ONE.Abp.DataDictionary.TestBase/ONE.Abp.DataDictionary.TestBase.abppkg.json",
+      "folder": "test"
+    },
+    "ONE.Abp.DataDictionary.EntityFrameworkCore.Tests": {
+      "path": "test/ONE.Abp.DataDictionary.EntityFrameworkCore.Tests/ONE.Abp.DataDictionary.EntityFrameworkCore.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "ONE.Abp.DataDictionary.MongoDB.Tests": {
+      "path": "test/ONE.Abp.DataDictionary.MongoDB.Tests/ONE.Abp.DataDictionary.MongoDB.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "ONE.Abp.DataDictionary.Domain.Tests": {
+      "path": "test/ONE.Abp.DataDictionary.Domain.Tests/ONE.Abp.DataDictionary.Domain.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "ONE.Abp.DataDictionary.Application.Tests": {
+      "path": "test/ONE.Abp.DataDictionary.Application.Tests/ONE.Abp.DataDictionary.Application.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "ONE.Abp.DataDictionary.HttpApi.Host": {
+      "path": "host/ONE.Abp.DataDictionary.HttpApi.Host/ONE.Abp.DataDictionary.HttpApi.Host.abppkg.json",
+      "folder": "host"
+    },
+    "ONE.Abp.DataDictionary.Web": {
+      "path": "src/ONE.Abp.DataDictionary.Web/ONE.Abp.DataDictionary.Web.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.DataDictionary.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/ONE.Abp.DataDictionary.HttpApi.Client.ConsoleTestApp/ONE.Abp.DataDictionary.HttpApi.Client.ConsoleTestApp.abppkg.json",
+      "folder": "test"
+    },
+    "ONE.Abp.DataDictionary.Web.Host": {
+      "path": "host/ONE.Abp.DataDictionary.Web.Host/ONE.Abp.DataDictionary.Web.Host.abppkg.json",
+      "folder": "host"
+    },
+    "ONE.Abp.DataDictionary.AuthServer": {
+      "path": "host/ONE.Abp.DataDictionary.AuthServer/ONE.Abp.DataDictionary.AuthServer.abppkg.json",
+      "folder": "host"
+    },
+    "ONE.Abp.DataDictionary.Host.Shared": {
+      "path": "host/ONE.Abp.DataDictionary.Host.Shared/ONE.Abp.DataDictionary.Host.Shared.abppkg.json",
+      "folder": "host"
+    },
+    "ONE.Abp.DataDictionary.Web.Unified": {
+      "path": "host/ONE.Abp.DataDictionary.Web.Unified/ONE.Abp.DataDictionary.Web.Unified.abppkg.json",
+      "folder": "host"
+    },
+    "ONE.Abp.DataDictionary.Blazor": {
+      "path": "src/ONE.Abp.DataDictionary.Blazor/ONE.Abp.DataDictionary.Blazor.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.DataDictionary.Blazor.Host": {
+      "path": "host/ONE.Abp.DataDictionary.Blazor.Host/ONE.Abp.DataDictionary.Blazor.Host.abppkg.json",
+      "folder": "host"
+    },
+    "ONE.Abp.DataDictionary.Blazor.Server": {
+      "path": "src/ONE.Abp.DataDictionary.Blazor.Server/ONE.Abp.DataDictionary.Blazor.Server.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.DataDictionary.Blazor.WebAssembly": {
+      "path": "src/ONE.Abp.DataDictionary.Blazor.WebAssembly/ONE.Abp.DataDictionary.Blazor.WebAssembly.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.DataDictionary.Blazor.Server.Host": {
+      "path": "host/ONE.Abp.DataDictionary.Blazor.Server.Host/ONE.Abp.DataDictionary.Blazor.Server.Host.abppkg.json",
+      "folder": "host"
+    }
+  }
+}

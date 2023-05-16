@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\..\common.props" />
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net7.0</TargetFramework>
+		<PackAsTool>true</PackAsTool>
+		<ToolCommandName>oneabp</ToolCommandName>
+		<PackageOutputPath>./nupkg</PackageOutputPath>
+		<RootNamespace />
+		<UserSecretsId>43599b00-4fa5-4b9f-a314-0757889b296b</UserSecretsId>
+  </PropertyGroup>
+	
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.Autofac" Version="$(AbpVersion)" />
+		<PackageReference Include="Volo.Abp.Cli.Core" Version="$(AbpVersion)" />
+		<PackageReference Include="Microsoft.CSharp" Version="$(MicrosoftCSharpVersion)" />
+		<PackageReference Include="NETStandard.Library" Version="2.0.3" />
+		<PackageReference Include="Serilog.Extensions.Logging" Version="$(SerilogExtensionsLoggingVersion)" />
+		<PackageReference Include="Serilog.Sinks.File" Version="$(SerilogSinksFileVersion)" />
+		<PackageReference Include="Serilog.Sinks.Console" Version="$(SerilogSinksConsoleVersion)" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="$(MicrosoftVersion)" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="$(MicrosoftVersion)" />
+	</ItemGroup>
+	
+	<ItemGroup>
+	  <Folder Include="nupkg\" />
+	  <Folder Include="Properties\" />
+	</ItemGroup>
+
+</Project>

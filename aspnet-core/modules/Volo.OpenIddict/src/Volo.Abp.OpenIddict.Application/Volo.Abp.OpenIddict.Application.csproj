@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<PackageId>ONE.Abp.OpenIddict.Application</PackageId>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.Ddd.Application" Version="$(AbpVersion)" />
+		<PackageReference Include="Volo.Abp.AutoMapper" Version="$(AbpVersion)" />
+		<PackageReference Include="Volo.Abp.PermissionManagement.Domain" Version="$(AbpVersion)" />
+		<ProjectReference Include="..\Volo.Abp.OpenIddict.Application.Contracts\Volo.Abp.OpenIddict.Application.Contracts.csproj" />
+		<ProjectReference Include="..\Volo.Abp.OpenIddict.Domain\Volo.Abp.OpenIddict.Domain.csproj" />
+		<ProjectReference Include="..\..\..\..\framework\ONE.Abp\src\ONE.Abp.Pagination\ONE.Abp.Pagination.csproj" />
+	</ItemGroup>
+
+</Project>

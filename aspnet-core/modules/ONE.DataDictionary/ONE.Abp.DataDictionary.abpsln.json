@@ -1,0 +1,7 @@
+{
+  "modules": {
+    "ONE.Abp.DataDictionary": {
+      "path": "ONE.Abp.DataDictionary.abpmdl.json"
+    }
+  }
+}

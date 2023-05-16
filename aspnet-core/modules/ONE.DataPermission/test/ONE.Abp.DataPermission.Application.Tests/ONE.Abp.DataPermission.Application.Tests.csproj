@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>ONE.Abp.DataPermission</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\ONE.Abp.DataPermission.Application\ONE.Abp.DataPermission.Application.csproj" />
+    <ProjectReference Include="..\ONE.Abp.DataPermission.Domain.Tests\ONE.Abp.DataPermission.Domain.Tests.csproj" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="$(MicrosoftNETTestSdkVersion)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Rules\" />
+  </ItemGroup>
+
+</Project>

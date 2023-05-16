@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<RootNamespace>MyCompanyName.MyProjectName</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\MyCompanyName.MyProjectName.Application.Contracts\MyCompanyName.MyProjectName.Application.Contracts.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.PermissionManagement.HttpApi.Client" Version="$(AbpVersion)" />
+		<PackageReference Include="Volo.Abp.FeatureManagement.HttpApi.Client" Version="$(AbpVersion)" />
+		<PackageReference Include="Volo.Abp.SettingManagement.HttpApi.Client" Version="$(AbpVersion)" />
+
+		<ProjectReference Include="..\..\..\..\..\modules\Volo.Account\src\Volo.Abp.Account.HttpApi.Client\Volo.Abp.Account.HttpApi.Client.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\Volo.Identity\src\Volo.Abp.Identity.HttpApi.Client\Volo.Abp.Identity.HttpApi.Client.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\Volo.TenantManagement\src\Volo.Abp.TenantManagement.HttpApi.Client\Volo.Abp.TenantManagement.HttpApi.Client.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\ONE.SysResource\src\ONE.Abp.SysResource.HttpApi.Client\ONE.Abp.SysResource.HttpApi.Client.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\ONE.DataDictionary\src\ONE.Abp.DataDictionary.HttpApi.Client\ONE.Abp.DataDictionary.HttpApi.Client.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\ONE.DataPermission\src\ONE.Abp.DataPermission.HttpApi.Client\ONE.Abp.DataPermission.HttpApi.Client.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\ONE.FileManagement\src\ONE.Abp.FileManagement.HttpApi.Client\ONE.Abp.FileManagement.HttpApi.Client.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Include="**\*generate-proxy.json" />
+		<Content Remove="**\*generate-proxy.json" />
+	</ItemGroup>
+
+</Project>

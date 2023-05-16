@@ -1,0 +1,16 @@
+{
+  "culture": "en",
+  "texts": {
+    "Menu:Home": "Home",
+    "Welcome": "Welcome",
+    "LongWelcomeMessage": "Welcome to the application. This is a startup project based on the ABP framework. For more information, visit abp.io.",
+    "Permission:SettingManagementPermissions": "SettingManagement",
+    "Permission:Create": "Create",
+    "Permission:Update": "Update",
+    "Permission:Delete": "Delete",
+    "Permission:Enable": "Enable",
+    "Permission:IdentitySetting": "IdentitySetting",
+    "Permission:AccountSetting": "AccountSetting",
+    "Permission:FileSetting": "FileSetting"
+  }
+}

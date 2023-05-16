@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<RootNamespace>MyCompanyName.MyProjectName</RootNamespace>
+	</PropertyGroup>
+	
+	<ItemGroup>
+		<ProjectReference Include="..\MyCompanyName.MyProjectName.Domain.Shared\MyCompanyName.MyProjectName.Domain.Shared.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Magicodes.IE.Excel" Version="2.7.4.4" />
+		<PackageReference Include="Volo.Abp.Emailing" Version="$(AbpVersion)" />
+		<PackageReference Include="Volo.Abp.BackgroundJobs.Domain" Version="$(AbpVersion)" />
+		<PackageReference Include="Volo.Abp.AuditLogging.Domain" Version="$(AbpVersion)" />
+		<PackageReference Include="Volo.Abp.FeatureManagement.Domain" Version="$(AbpVersion)" />
+		<PackageReference Include="Volo.Abp.SettingManagement.Domain" Version="$(AbpVersion)" />
+
+		<ProjectReference Include="..\..\..\..\..\modules\ONE.SysResource\src\ONE.Abp.SysResource.Domain\ONE.Abp.SysResource.Domain.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\ONE.DataDictionary\src\ONE.Abp.DataDictionary.Domain\ONE.Abp.DataDictionary.Domain.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\ONE.DataPermission\src\ONE.Abp.DataPermission.Domain\ONE.Abp.DataPermission.Domain.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\ONE.FileManagement\src\ONE.Abp.FileManagement.Domain\ONE.Abp.FileManagement.Domain.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\Volo.TenantManagement\src\Volo.Abp.TenantManagement.Domain\Volo.Abp.TenantManagement.Domain.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\Volo.Identity\src\Volo.Abp.Identity.Domain\Volo.Abp.Identity.Domain.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\Volo.Identity\src\Volo.Abp.PermissionManagement.Domain.Identity\Volo.Abp.PermissionManagement.Domain.Identity.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\Volo.OpenIddict\src\Volo.Abp.OpenIddict.Domain\Volo.Abp.OpenIddict.Domain.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\Volo.OpenIddict\src\Volo.Abp.PermissionManagement.Domain.OpenIddict\Volo.Abp.PermissionManagement.Domain.OpenIddict.csproj" />
+
+	</ItemGroup>
+
+</Project>

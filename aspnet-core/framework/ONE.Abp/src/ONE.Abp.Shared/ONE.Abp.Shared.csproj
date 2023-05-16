@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+ <Import Project="..\..\..\..\common.props" />	
+	
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Newtonsoft.Json" Version="$(NewtonsoftJsonVersion)" />
+		
+		<PackageReference Include="Volo.Abp.Core" Version="$(AbpVersion)" />
+	</ItemGroup>
+</Project>

@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "ONE.Abp.Cli": {
+      "commandName": "Project",
+      //"commandLineArgs": "new ONE.Admin -t base -d ef -dbms postgresql -v 1.1.0 -ts D:\\\\public\\\\Project\\\\Microservice\\\\owner\\\\netcore\\\\aspnet-core\\\\templates\\\\base -o D:\\public\\Project\\Microservice\\owner\\test\\1.1.0",
+      //"commandLineArgs": "new Sum.Micro -t micro -d ef -dbms postgresql -o D:\\public\\Project\\Microservice\\owner\\test\\1.4.0\\micro"
+      //"commandLineArgs": "new Sum.Admin -t base -d ef -dbms postgresql -o D:\\public\\Project\\Microservice\\owner\\test\\1.2.0\\base"
+      "commandLineArgs": "help"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "modules": {
+    "ONE.Abp.DataPermission": {
+      "path": "ONE.Abp.DataPermission.abpmdl.json"
+    }
+  }
+}

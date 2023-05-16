@@ -1,0 +1,36 @@
+﻿{
+  "Serilog": {
+    "Using": [
+      "Serilog.Sinks.Console",
+      "Serilog.Sinks.File"
+    ],
+    "MinimumLevel": {
+      "Default": "Information",
+      "Override": {
+        "Microsoft": "Information",
+        "Microsoft.AspNetCore": "Warning",
+        "Volo.Abp": "Information",
+        "Hangfire": "Information",
+        "DotNetCore.CAP": "Information",
+        "Serilog.AspNetCore": "Information",
+        "Microsoft.EntityFrameworkCore": "Information"
+      }
+    },
+    "WriteTo": [
+      {
+        "Name": "Console"
+      },
+      {
+        "Name": "File",
+        "Args": {
+          "path": "Logs/logs-.txt",
+          "formatter": "Serilog.Formatting.Compact.RenderedCompactJsonFormatter, Serilog.Formatting.Compact",
+          "rollingInterval": "Day"
+        }
+      }
+    ]
+  }
+}
+
+
+

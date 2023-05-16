@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<Import Project="..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<RootNamespace>MyCompanyName.MyProjectName</RootNamespace>
+		<AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+		<AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+		<GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+		<GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+		<MvcRazorExcludeRefAssembliesFromPublish>false</MvcRazorExcludeRefAssembliesFromPublish>
+		<PreserveCompilationReferences>true</PreserveCompilationReferences>
+		<UserSecretsId>MyCompanyName.MyProjectName-4681b4fd-151f-4221-84a4-929d86723e4c</UserSecretsId>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="Logs\**" />
+		<Content Remove="Logs\**" />
+		<EmbeddedResource Remove="Logs\**" />
+		<None Remove="Logs\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="Pages\**\*.js">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Pages\**\*.css">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="$(MicrosoftVisualStudioAzureVersion)" />
+		<PackageReference Include="Serilog.AspNetCore" Version="$(SerilogAspNetCoreVersion)" />
+		<PackageReference Include="Serilog.Sinks.Async" Version="$(SerilogSinksAsyncVersion)" />
+		<PackageReference Include="Microsoft.AspNetCore.DataProtection.StackExchangeRedis" Version="$(MicrosoftVersion)" />
+		<PackageReference Include="DistributedLock.Redis" Version="$(DistributedLockRedisVersion)" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.AspNetCore.Mvc.UI.Theme.LeptonXLite" Version="$(AbpAspNetCoreMvcUIThemeLeptonXLiteVersion)" />
+		<PackageReference Include="Volo.Abp.Autofac" Version="$(AbpVersion)" />
+		<PackageReference Include="Volo.Abp.Caching.StackExchangeRedis" Version="$(AbpVersion)" />
+		<PackageReference Include="Volo.Abp.DistributedLocking" Version="$(AbpVersion)" />
+		<PackageReference Include="Volo.Abp.AspNetCore.Serilog" Version="$(AbpVersion)" />		<ProjectReference Include="..\..\..\..\..\framework\ONE.Abp\src\ONE.Abp.Shared.Hosting.Microservice\ONE.Abp.Shared.Hosting.Microservice.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\Volo.Account\src\Volo.Abp.Account.Web.OpenIddict\Volo.Abp.Account.Web.OpenIddict.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\Volo.Account\src\Volo.Abp.Account.Application\Volo.Abp.Account.Application.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\Volo.Account\src\Volo.Abp.Account.HttpApi\Volo.Abp.Account.HttpApi.csproj" />
+		<ProjectReference Include="..\MyCompanyName.MyProjectName.EntityFrameworkCore\MyCompanyName.MyProjectName.EntityFrameworkCore.csproj" />
+	</ItemGroup>
+
+</Project>

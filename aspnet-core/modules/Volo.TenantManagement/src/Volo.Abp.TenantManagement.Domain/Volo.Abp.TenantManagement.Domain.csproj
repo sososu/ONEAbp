@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\..\common.props" />
+	<PropertyGroup><LangVersion>latest</LangVersion>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <AssemblyName>Volo.Abp.TenantManagement.Domain</AssemblyName>
+    <PackageId>ONE.Abp.TenantManagement.Domain</PackageId>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace />
+		
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Volo.Abp.TenantManagement.Domain.Shared\Volo.Abp.TenantManagement.Domain.Shared.csproj" />
+
+    <PackageReference Include="Volo.Abp.AutoMapper" Version="$(AbpVersion)" />
+    <PackageReference Include="Volo.Abp.Data" Version="$(AbpVersion)" />
+    <PackageReference Include="Volo.Abp.Ddd.Domain" Version="$(AbpVersion)" />
+    <PackageReference Include="Volo.Abp.MultiTenancy" Version="$(AbpVersion)" />
+    <PackageReference Include="Volo.Abp.Caching" Version="$(AbpVersion)" />
+  </ItemGroup>
+
+</Project>

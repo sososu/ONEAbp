@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="..\..\..\..\common.props" />
+
+	<PropertyGroup><LangVersion>latest</LangVersion>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Volo.Abp.TenantManagement.Application.Contracts</AssemblyName>
+	<PackageId>ONE.Abp.TenantManagement.Application.Contracts</PackageId>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace />
+		
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Volo.Abp.TenantManagement.Domain.Shared\Volo.Abp.TenantManagement.Domain.Shared.csproj" />
+	<ProjectReference Include="..\..\..\..\framework\ONE.Abp\src\ONE.Abp.Pagination.Contracts\ONE.Abp.Pagination.Contracts.csproj" />
+    <PackageReference Include="Volo.Abp.Ddd.Application.Contracts" Version="$(AbpVersion)" />
+    <PackageReference Include="Volo.Abp.Authorization.Abstractions" Version="$(AbpVersion)" />
+  </ItemGroup>
+
+</Project>

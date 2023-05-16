@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<RootNamespace>MyCompanyName.MyProjectName</RootNamespace>
+	</PropertyGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\MyCompanyName.MyProjectName.Application.Contracts\MyCompanyName.MyProjectName.Application.Contracts.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.FeatureManagement.HttpApi" Version="$(AbpVersion)" />
+		<PackageReference Include="Volo.Abp.SettingManagement.HttpApi" Version="$(AbpVersion)" />
+		<PackageReference Include="Volo.Abp.PermissionManagement.HttpApi" Version="$(AbpVersion)" />
+		<PackageReference Include="Volo.Abp.PermissionManagement.HttpApi" Version="$(AbpVersion)" />
+
+		<ProjectReference Include="..\..\..\..\..\modules\ONE.SysResource\src\ONE.Abp.SysResource.HttpApi\ONE.Abp.SysResource.HttpApi.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\ONE.DataDictionary\src\ONE.Abp.DataDictionary.HttpApi\ONE.Abp.DataDictionary.HttpApi.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\ONE.DataPermission\src\ONE.Abp.DataPermission.HttpApi\ONE.Abp.DataPermission.HttpApi.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\ONE.FileManagement\src\ONE.Abp.FileManagement.HttpApi\ONE.Abp.FileManagement.HttpApi.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\Volo.Account\src\Volo.Abp.Account.HttpApi\Volo.Abp.Account.HttpApi.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\Volo.Identity\src\Volo.Abp.Identity.HttpApi\Volo.Abp.Identity.HttpApi.csproj" />
+		<ProjectReference Include="..\..\..\..\..\modules\Volo.TenantManagement\src\Volo.Abp.TenantManagement.HttpApi\Volo.Abp.TenantManagement.HttpApi.csproj" />
+	</ItemGroup>
+
+</Project>

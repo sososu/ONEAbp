@@ -1,0 +1,1523 @@
+{
+  "modules": {
+    "dataPermission": {
+      "rootPath": "dataPermission",
+      "remoteServiceName": "AbpDataPermission",
+      "controllers": {
+        "ONE.Abp.DataPermission.Rules.DataRuleController": {
+          "controllerName": "DataRule",
+          "controllerGroupName": "DataRule",
+          "isRemoteService": true,
+          "isIntegrationService": false,
+          "apiVersion": null,
+          "type": "ONE.Abp.DataPermission.Rules.DataRuleController",
+          "interfaces": [
+            {
+              "type": "ONE.Abp.DataPermission.Rules.IDataRuleAppService",
+              "name": "IDataRuleAppService",
+              "methods": [
+                {
+                  "name": "GetPredefineFieldValuesAsync",
+                  "parametersOnMethod": [],
+                  "returnValue": {
+                    "type": "Volo.Abp.Application.Dtos.ListResultDto<System.String>",
+                    "typeSimple": "Volo.Abp.Application.Dtos.ListResultDto<string>"
+                  }
+                },
+                {
+                  "name": "GetIdNamesAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "targetName",
+                      "typeAsString": "System.String, System.Private.CoreLib",
+                      "type": "System.String",
+                      "typeSimple": "string",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.DataPermission.Rules.IdName<System.Guid>>",
+                    "typeSimple": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.DataPermission.Rules.IdName<string>>"
+                  }
+                },
+                {
+                  "name": "CreateAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "input",
+                      "typeAsString": "ONE.Abp.DataPermission.Rules.DataRuleCreateInput, ONE.Abp.DataPermission.Application.Contracts",
+                      "type": "ONE.Abp.DataPermission.Rules.DataRuleCreateInput",
+                      "typeSimple": "ONE.Abp.DataPermission.Rules.DataRuleCreateInput",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "ONE.Abp.DataPermission.Rules.DataRuleDto",
+                    "typeSimple": "ONE.Abp.DataPermission.Rules.DataRuleDto"
+                  }
+                },
+                {
+                  "name": "UpdateAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "id",
+                      "typeAsString": "System.Guid, System.Private.CoreLib",
+                      "type": "System.Guid",
+                      "typeSimple": "string",
+                      "isOptional": false,
+                      "defaultValue": null
+                    },
+                    {
+                      "name": "input",
+                      "typeAsString": "ONE.Abp.DataPermission.Rules.DataRuleCreateInput, ONE.Abp.DataPermission.Application.Contracts",
+                      "type": "ONE.Abp.DataPermission.Rules.DataRuleCreateInput",
+                      "typeSimple": "ONE.Abp.DataPermission.Rules.DataRuleCreateInput",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "ONE.Abp.DataPermission.Rules.DataRuleDto",
+                    "typeSimple": "ONE.Abp.DataPermission.Rules.DataRuleDto"
+                  }
+                },
+                {
+                  "name": "GetAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "id",
+                      "typeAsString": "System.Guid, System.Private.CoreLib",
+                      "type": "System.Guid",
+                      "typeSimple": "string",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "ONE.Abp.DataPermission.Rules.DataRuleDto",
+                    "typeSimple": "ONE.Abp.DataPermission.Rules.DataRuleDto"
+                  }
+                },
+                {
+                  "name": "DeleteAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "id",
+                      "typeAsString": "System.Guid, System.Private.CoreLib",
+                      "type": "System.Guid",
+                      "typeSimple": "string",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "System.Void",
+                    "typeSimple": "System.Void"
+                  }
+                },
+                {
+                  "name": "QueryAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "input",
+                      "typeAsString": "ONE.Abp.DataPermission.Rules.DataRuleQueryInput, ONE.Abp.DataPermission.Application.Contracts",
+                      "type": "ONE.Abp.DataPermission.Rules.DataRuleQueryInput",
+                      "typeSimple": "ONE.Abp.DataPermission.Rules.DataRuleQueryInput",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "ONE.Abp.Pagination.Contracts.Dtos.PagedResult<ONE.Abp.DataPermission.Rules.DataRuleMini>",
+                    "typeSimple": "ONE.Abp.Pagination.Contracts.Dtos.PagedResult<ONE.Abp.DataPermission.Rules.DataRuleMini>"
+                  }
+                }
+              ]
+            }
+          ],
+          "actions": {
+            "CreateAsyncByInput": {
+              "uniqueName": "CreateAsyncByInput",
+              "name": "CreateAsync",
+              "httpMethod": "POST",
+              "url": "api/data-permission/data-rule",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "input",
+                  "typeAsString": "ONE.Abp.DataPermission.Rules.DataRuleCreateInput, ONE.Abp.DataPermission.Application.Contracts",
+                  "type": "ONE.Abp.DataPermission.Rules.DataRuleCreateInput",
+                  "typeSimple": "ONE.Abp.DataPermission.Rules.DataRuleCreateInput",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "input",
+                  "name": "input",
+                  "jsonName": null,
+                  "type": "ONE.Abp.DataPermission.Rules.DataRuleCreateInput",
+                  "typeSimple": "ONE.Abp.DataPermission.Rules.DataRuleCreateInput",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "Body",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "ONE.Abp.DataPermission.Rules.DataRuleDto",
+                "typeSimple": "ONE.Abp.DataPermission.Rules.DataRuleDto"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.DataPermission.Rules.IDataRuleAppService"
+            },
+            "UpdateAsyncByIdAndInput": {
+              "uniqueName": "UpdateAsyncByIdAndInput",
+              "name": "UpdateAsync",
+              "httpMethod": "PUT",
+              "url": "api/data-permission/data-rule/{id}",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "id",
+                  "typeAsString": "System.Guid, System.Private.CoreLib",
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null
+                },
+                {
+                  "name": "input",
+                  "typeAsString": "ONE.Abp.DataPermission.Rules.DataRuleCreateInput, ONE.Abp.DataPermission.Application.Contracts",
+                  "type": "ONE.Abp.DataPermission.Rules.DataRuleCreateInput",
+                  "typeSimple": "ONE.Abp.DataPermission.Rules.DataRuleCreateInput",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "id",
+                  "name": "id",
+                  "jsonName": null,
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": [],
+                  "bindingSourceId": "Path",
+                  "descriptorName": ""
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "input",
+                  "jsonName": null,
+                  "type": "ONE.Abp.DataPermission.Rules.DataRuleCreateInput",
+                  "typeSimple": "ONE.Abp.DataPermission.Rules.DataRuleCreateInput",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "Body",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "ONE.Abp.DataPermission.Rules.DataRuleDto",
+                "typeSimple": "ONE.Abp.DataPermission.Rules.DataRuleDto"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.DataPermission.Rules.IDataRuleAppService"
+            },
+            "DeleteAsyncById": {
+              "uniqueName": "DeleteAsyncById",
+              "name": "DeleteAsync",
+              "httpMethod": "DELETE",
+              "url": "api/data-permission/data-rule/{id}",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "id",
+                  "typeAsString": "System.Guid, System.Private.CoreLib",
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "id",
+                  "name": "id",
+                  "jsonName": null,
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": [],
+                  "bindingSourceId": "Path",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "System.Void",
+                "typeSimple": "System.Void"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.DataPermission.Rules.IDataRuleAppService"
+            },
+            "GetAsyncById": {
+              "uniqueName": "GetAsyncById",
+              "name": "GetAsync",
+              "httpMethod": "GET",
+              "url": "api/data-permission/data-rule/{id}",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "id",
+                  "typeAsString": "System.Guid, System.Private.CoreLib",
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "id",
+                  "name": "id",
+                  "jsonName": null,
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": [],
+                  "bindingSourceId": "Path",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "ONE.Abp.DataPermission.Rules.DataRuleDto",
+                "typeSimple": "ONE.Abp.DataPermission.Rules.DataRuleDto"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.DataPermission.Rules.IDataRuleAppService"
+            },
+            "QueryAsyncByInput": {
+              "uniqueName": "QueryAsyncByInput",
+              "name": "QueryAsync",
+              "httpMethod": "GET",
+              "url": "api/data-permission/data-rule/page",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "input",
+                  "typeAsString": "ONE.Abp.DataPermission.Rules.DataRuleQueryInput, ONE.Abp.DataPermission.Application.Contracts",
+                  "type": "ONE.Abp.DataPermission.Rules.DataRuleQueryInput",
+                  "typeSimple": "ONE.Abp.DataPermission.Rules.DataRuleQueryInput",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "input",
+                  "name": "Name",
+                  "jsonName": null,
+                  "type": "System.String",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "DataTargetName",
+                  "jsonName": null,
+                  "type": "System.String",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "PageIndex",
+                  "jsonName": null,
+                  "type": "System.Int32",
+                  "typeSimple": "number",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "PageSize",
+                  "jsonName": null,
+                  "type": "System.Int32",
+                  "typeSimple": "number",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "SortFields",
+                  "jsonName": null,
+                  "type": "System.Collections.Generic.IList<System.String>",
+                  "typeSimple": "[string]",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                }
+              ],
+              "returnValue": {
+                "type": "ONE.Abp.Pagination.Contracts.Dtos.PagedResult<ONE.Abp.DataPermission.Rules.DataRuleMini>",
+                "typeSimple": "ONE.Abp.Pagination.Contracts.Dtos.PagedResult<ONE.Abp.DataPermission.Rules.DataRuleMini>"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.DataPermission.Rules.IDataRuleAppService"
+            },
+            "GetIdNamesAsyncByTargetName": {
+              "uniqueName": "GetIdNamesAsyncByTargetName",
+              "name": "GetIdNamesAsync",
+              "httpMethod": "GET",
+              "url": "api/data-permission/data-rule/kv",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "targetName",
+                  "typeAsString": "System.String, System.Private.CoreLib",
+                  "type": "System.String",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "targetName",
+                  "name": "targetName",
+                  "jsonName": null,
+                  "type": "System.String",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.DataPermission.Rules.IdName<System.Guid>>",
+                "typeSimple": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.DataPermission.Rules.IdName<string>>"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.DataPermission.Rules.IDataRuleAppService"
+            },
+            "GetPredefineFieldValuesAsync": {
+              "uniqueName": "GetPredefineFieldValuesAsync",
+              "name": "GetPredefineFieldValuesAsync",
+              "httpMethod": "GET",
+              "url": "api/data-permission/data-rule/define-value",
+              "supportedVersions": [],
+              "parametersOnMethod": [],
+              "parameters": [],
+              "returnValue": {
+                "type": "Volo.Abp.Application.Dtos.ListResultDto<System.String>",
+                "typeSimple": "Volo.Abp.Application.Dtos.ListResultDto<string>"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.DataPermission.Rules.IDataRuleAppService"
+            }
+          }
+        },
+        "ONE.Abp.DataPermission.Rules.DataTargetController": {
+          "controllerName": "DataTarget",
+          "controllerGroupName": "DataTarget",
+          "isRemoteService": true,
+          "isIntegrationService": false,
+          "apiVersion": null,
+          "type": "ONE.Abp.DataPermission.Rules.DataTargetController",
+          "interfaces": [
+            {
+              "type": "ONE.Abp.DataPermission.Rules.IDataTargetAppService",
+              "name": "IDataTargetAppService",
+              "methods": [
+                {
+                  "name": "QueryAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "input",
+                      "typeAsString": "ONE.Abp.DataPermission.Rules.DataTargetQueryInput, ONE.Abp.DataPermission.Application.Contracts",
+                      "type": "ONE.Abp.DataPermission.Rules.DataTargetQueryInput",
+                      "typeSimple": "ONE.Abp.DataPermission.Rules.DataTargetQueryInput",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "ONE.Abp.Pagination.Contracts.Dtos.PagedResult<ONE.Abp.DataPermission.Rules.DataTargetDto>",
+                    "typeSimple": "ONE.Abp.Pagination.Contracts.Dtos.PagedResult<ONE.Abp.DataPermission.Rules.DataTargetDto>"
+                  }
+                },
+                {
+                  "name": "GetListAsync",
+                  "parametersOnMethod": [],
+                  "returnValue": {
+                    "type": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.DataPermission.Rules.DataTargetDto>",
+                    "typeSimple": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.DataPermission.Rules.DataTargetDto>"
+                  }
+                },
+                {
+                  "name": "GetAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "name",
+                      "typeAsString": "System.String, System.Private.CoreLib",
+                      "type": "System.String",
+                      "typeSimple": "string",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "ONE.Abp.DataPermission.Rules.DataTargetDto",
+                    "typeSimple": "ONE.Abp.DataPermission.Rules.DataTargetDto"
+                  }
+                }
+              ]
+            }
+          ],
+          "actions": {
+            "GetAsyncByName": {
+              "uniqueName": "GetAsyncByName",
+              "name": "GetAsync",
+              "httpMethod": "GET",
+              "url": "api/data-permission/target/{name}",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "name",
+                  "typeAsString": "System.String, System.Private.CoreLib",
+                  "type": "System.String",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "name",
+                  "name": "name",
+                  "jsonName": null,
+                  "type": "System.String",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": [],
+                  "bindingSourceId": "Path",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "ONE.Abp.DataPermission.Rules.DataTargetDto",
+                "typeSimple": "ONE.Abp.DataPermission.Rules.DataTargetDto"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.DataPermission.Rules.IDataTargetAppService"
+            },
+            "GetListAsync": {
+              "uniqueName": "GetListAsync",
+              "name": "GetListAsync",
+              "httpMethod": "GET",
+              "url": "api/data-permission/target/list",
+              "supportedVersions": [],
+              "parametersOnMethod": [],
+              "parameters": [],
+              "returnValue": {
+                "type": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.DataPermission.Rules.DataTargetDto>",
+                "typeSimple": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.DataPermission.Rules.DataTargetDto>"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.DataPermission.Rules.IDataTargetAppService"
+            },
+            "QueryAsyncByInput": {
+              "uniqueName": "QueryAsyncByInput",
+              "name": "QueryAsync",
+              "httpMethod": "GET",
+              "url": "api/data-permission/target/page",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "input",
+                  "typeAsString": "ONE.Abp.DataPermission.Rules.DataTargetQueryInput, ONE.Abp.DataPermission.Application.Contracts",
+                  "type": "ONE.Abp.DataPermission.Rules.DataTargetQueryInput",
+                  "typeSimple": "ONE.Abp.DataPermission.Rules.DataTargetQueryInput",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "input",
+                  "name": "Name",
+                  "jsonName": null,
+                  "type": "System.String",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "PageIndex",
+                  "jsonName": null,
+                  "type": "System.Int32",
+                  "typeSimple": "number",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "PageSize",
+                  "jsonName": null,
+                  "type": "System.Int32",
+                  "typeSimple": "number",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "SortFields",
+                  "jsonName": null,
+                  "type": "System.Collections.Generic.IList<System.String>",
+                  "typeSimple": "[string]",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                }
+              ],
+              "returnValue": {
+                "type": "ONE.Abp.Pagination.Contracts.Dtos.PagedResult<ONE.Abp.DataPermission.Rules.DataTargetDto>",
+                "typeSimple": "ONE.Abp.Pagination.Contracts.Dtos.PagedResult<ONE.Abp.DataPermission.Rules.DataTargetDto>"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.DataPermission.Rules.IDataTargetAppService"
+            }
+          }
+        },
+        "ONE.Abp.DataPermission.Rules.UserDataRuleController": {
+          "controllerName": "UserDataRule",
+          "controllerGroupName": "UserDataRule",
+          "isRemoteService": true,
+          "isIntegrationService": false,
+          "apiVersion": null,
+          "type": "ONE.Abp.DataPermission.Rules.UserDataRuleController",
+          "interfaces": [
+            {
+              "type": "ONE.Abp.DataPermission.Rules.IUserDataRuleAppService",
+              "name": "IUserDataRuleAppService",
+              "methods": [
+                {
+                  "name": "CreateAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "input",
+                      "typeAsString": "ONE.Abp.DataPermission.Rules.UserDataRuleCreateInput, ONE.Abp.DataPermission.Application.Contracts",
+                      "type": "ONE.Abp.DataPermission.Rules.UserDataRuleCreateInput",
+                      "typeSimple": "ONE.Abp.DataPermission.Rules.UserDataRuleCreateInput",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "System.Void",
+                    "typeSimple": "System.Void"
+                  }
+                },
+                {
+                  "name": "UpdateAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "id",
+                      "typeAsString": "System.Guid, System.Private.CoreLib",
+                      "type": "System.Guid",
+                      "typeSimple": "string",
+                      "isOptional": false,
+                      "defaultValue": null
+                    },
+                    {
+                      "name": "input",
+                      "typeAsString": "ONE.Abp.DataPermission.Rules.UserDataRuleCreateInput, ONE.Abp.DataPermission.Application.Contracts",
+                      "type": "ONE.Abp.DataPermission.Rules.UserDataRuleCreateInput",
+                      "typeSimple": "ONE.Abp.DataPermission.Rules.UserDataRuleCreateInput",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "System.Void",
+                    "typeSimple": "System.Void"
+                  }
+                },
+                {
+                  "name": "SetEnableAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "id",
+                      "typeAsString": "System.Guid, System.Private.CoreLib",
+                      "type": "System.Guid",
+                      "typeSimple": "string",
+                      "isOptional": false,
+                      "defaultValue": null
+                    },
+                    {
+                      "name": "input",
+                      "typeAsString": "ONE.Abp.DataPermission.Rules.UserDataRuleEnableInput, ONE.Abp.DataPermission.Application.Contracts",
+                      "type": "ONE.Abp.DataPermission.Rules.UserDataRuleEnableInput",
+                      "typeSimple": "ONE.Abp.DataPermission.Rules.UserDataRuleEnableInput",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "System.Void",
+                    "typeSimple": "System.Void"
+                  }
+                },
+                {
+                  "name": "DeleteAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "id",
+                      "typeAsString": "System.Guid, System.Private.CoreLib",
+                      "type": "System.Guid",
+                      "typeSimple": "string",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "System.Void",
+                    "typeSimple": "System.Void"
+                  }
+                },
+                {
+                  "name": "GetAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "id",
+                      "typeAsString": "System.Guid, System.Private.CoreLib",
+                      "type": "System.Guid",
+                      "typeSimple": "string",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "ONE.Abp.DataPermission.Rules.UserDataRuleDto",
+                    "typeSimple": "ONE.Abp.DataPermission.Rules.UserDataRuleDto"
+                  }
+                },
+                {
+                  "name": "QueryAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "input",
+                      "typeAsString": "ONE.Abp.DataPermission.Rules.UserDataRuleQueryInput, ONE.Abp.DataPermission.Application.Contracts",
+                      "type": "ONE.Abp.DataPermission.Rules.UserDataRuleQueryInput",
+                      "typeSimple": "ONE.Abp.DataPermission.Rules.UserDataRuleQueryInput",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "ONE.Abp.Pagination.Contracts.Dtos.PagedResult<ONE.Abp.DataPermission.Rules.UserDataRuleDto>",
+                    "typeSimple": "ONE.Abp.Pagination.Contracts.Dtos.PagedResult<ONE.Abp.DataPermission.Rules.UserDataRuleDto>"
+                  }
+                },
+                {
+                  "name": "GetRules",
+                  "parametersOnMethod": [
+                    {
+                      "name": "dataTargetName",
+                      "typeAsString": "System.String, System.Private.CoreLib",
+                      "type": "System.String",
+                      "typeSimple": "string",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "System.Collections.Generic.List<ONE.Abp.DataPermission.Rules.UserDataRuleDto>",
+                    "typeSimple": "[ONE.Abp.DataPermission.Rules.UserDataRuleDto]"
+                  }
+                }
+              ]
+            }
+          ],
+          "actions": {
+            "CreateAsyncByInput": {
+              "uniqueName": "CreateAsyncByInput",
+              "name": "CreateAsync",
+              "httpMethod": "POST",
+              "url": "api/data-permission/rule",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "input",
+                  "typeAsString": "ONE.Abp.DataPermission.Rules.UserDataRuleCreateInput, ONE.Abp.DataPermission.Application.Contracts",
+                  "type": "ONE.Abp.DataPermission.Rules.UserDataRuleCreateInput",
+                  "typeSimple": "ONE.Abp.DataPermission.Rules.UserDataRuleCreateInput",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "input",
+                  "name": "input",
+                  "jsonName": null,
+                  "type": "ONE.Abp.DataPermission.Rules.UserDataRuleCreateInput",
+                  "typeSimple": "ONE.Abp.DataPermission.Rules.UserDataRuleCreateInput",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "Body",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "System.Void",
+                "typeSimple": "System.Void"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.DataPermission.Rules.IUserDataRuleAppService"
+            },
+            "UpdateAsyncByIdAndInput": {
+              "uniqueName": "UpdateAsyncByIdAndInput",
+              "name": "UpdateAsync",
+              "httpMethod": "PUT",
+              "url": "api/data-permission/rule/{id}",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "id",
+                  "typeAsString": "System.Guid, System.Private.CoreLib",
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null
+                },
+                {
+                  "name": "input",
+                  "typeAsString": "ONE.Abp.DataPermission.Rules.UserDataRuleCreateInput, ONE.Abp.DataPermission.Application.Contracts",
+                  "type": "ONE.Abp.DataPermission.Rules.UserDataRuleCreateInput",
+                  "typeSimple": "ONE.Abp.DataPermission.Rules.UserDataRuleCreateInput",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "id",
+                  "name": "id",
+                  "jsonName": null,
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": [],
+                  "bindingSourceId": "Path",
+                  "descriptorName": ""
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "input",
+                  "jsonName": null,
+                  "type": "ONE.Abp.DataPermission.Rules.UserDataRuleCreateInput",
+                  "typeSimple": "ONE.Abp.DataPermission.Rules.UserDataRuleCreateInput",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "Body",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "System.Void",
+                "typeSimple": "System.Void"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.DataPermission.Rules.IUserDataRuleAppService"
+            },
+            "DeleteAsyncById": {
+              "uniqueName": "DeleteAsyncById",
+              "name": "DeleteAsync",
+              "httpMethod": "DELETE",
+              "url": "api/data-permission/rule/{id}",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "id",
+                  "typeAsString": "System.Guid, System.Private.CoreLib",
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "id",
+                  "name": "id",
+                  "jsonName": null,
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": [],
+                  "bindingSourceId": "Path",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "System.Void",
+                "typeSimple": "System.Void"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.DataPermission.Rules.IUserDataRuleAppService"
+            },
+            "SetEnableAsyncByIdAndInput": {
+              "uniqueName": "SetEnableAsyncByIdAndInput",
+              "name": "SetEnableAsync",
+              "httpMethod": "PUT",
+              "url": "api/data-permission/rule/{id}/enable",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "id",
+                  "typeAsString": "System.Guid, System.Private.CoreLib",
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null
+                },
+                {
+                  "name": "input",
+                  "typeAsString": "ONE.Abp.DataPermission.Rules.UserDataRuleEnableInput, ONE.Abp.DataPermission.Application.Contracts",
+                  "type": "ONE.Abp.DataPermission.Rules.UserDataRuleEnableInput",
+                  "typeSimple": "ONE.Abp.DataPermission.Rules.UserDataRuleEnableInput",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "id",
+                  "name": "id",
+                  "jsonName": null,
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": [],
+                  "bindingSourceId": "Path",
+                  "descriptorName": ""
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "input",
+                  "jsonName": null,
+                  "type": "ONE.Abp.DataPermission.Rules.UserDataRuleEnableInput",
+                  "typeSimple": "ONE.Abp.DataPermission.Rules.UserDataRuleEnableInput",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "Body",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "System.Void",
+                "typeSimple": "System.Void"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.DataPermission.Rules.IUserDataRuleAppService"
+            },
+            "GetAsyncById": {
+              "uniqueName": "GetAsyncById",
+              "name": "GetAsync",
+              "httpMethod": "GET",
+              "url": "api/data-permission/rule/{id}",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "id",
+                  "typeAsString": "System.Guid, System.Private.CoreLib",
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "id",
+                  "name": "id",
+                  "jsonName": null,
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": [],
+                  "bindingSourceId": "Path",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "ONE.Abp.DataPermission.Rules.UserDataRuleDto",
+                "typeSimple": "ONE.Abp.DataPermission.Rules.UserDataRuleDto"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.DataPermission.Rules.IUserDataRuleAppService"
+            },
+            "GetRulesByDataTargetName": {
+              "uniqueName": "GetRulesByDataTargetName",
+              "name": "GetRules",
+              "httpMethod": "GET",
+              "url": "api/data-permission/rule/by-targetname",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "dataTargetName",
+                  "typeAsString": "System.String, System.Private.CoreLib",
+                  "type": "System.String",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "dataTargetName",
+                  "name": "dataTargetName",
+                  "jsonName": null,
+                  "type": "System.String",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "System.Collections.Generic.List<ONE.Abp.DataPermission.Rules.UserDataRuleDto>",
+                "typeSimple": "[ONE.Abp.DataPermission.Rules.UserDataRuleDto]"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.DataPermission.Rules.IUserDataRuleAppService"
+            },
+            "QueryAsyncByInput": {
+              "uniqueName": "QueryAsyncByInput",
+              "name": "QueryAsync",
+              "httpMethod": "GET",
+              "url": "api/data-permission/rule/page",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "input",
+                  "typeAsString": "ONE.Abp.DataPermission.Rules.UserDataRuleQueryInput, ONE.Abp.DataPermission.Application.Contracts",
+                  "type": "ONE.Abp.DataPermission.Rules.UserDataRuleQueryInput",
+                  "typeSimple": "ONE.Abp.DataPermission.Rules.UserDataRuleQueryInput",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "input",
+                  "name": "DataTargetName",
+                  "jsonName": null,
+                  "type": "System.String",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "PageIndex",
+                  "jsonName": null,
+                  "type": "System.Int32",
+                  "typeSimple": "number",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "PageSize",
+                  "jsonName": null,
+                  "type": "System.Int32",
+                  "typeSimple": "number",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "SortFields",
+                  "jsonName": null,
+                  "type": "System.Collections.Generic.IList<System.String>",
+                  "typeSimple": "[string]",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                }
+              ],
+              "returnValue": {
+                "type": "ONE.Abp.Pagination.Contracts.Dtos.PagedResult<ONE.Abp.DataPermission.Rules.UserDataRuleDto>",
+                "typeSimple": "ONE.Abp.Pagination.Contracts.Dtos.PagedResult<ONE.Abp.DataPermission.Rules.UserDataRuleDto>"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.DataPermission.Rules.IUserDataRuleAppService"
+            }
+          }
+        },
+        "ONE.Abp.DataPermission.Rules.UserRuleController": {
+          "controllerName": "UserRule",
+          "controllerGroupName": "UserRule",
+          "isRemoteService": true,
+          "isIntegrationService": false,
+          "apiVersion": null,
+          "type": "ONE.Abp.DataPermission.Rules.UserRuleController",
+          "interfaces": [
+            {
+              "type": "ONE.Abp.DataPermission.Rules.IUserRuleAppService",
+              "name": "IUserRuleAppService",
+              "methods": [
+                {
+                  "name": "GetUserTargetFieldsAsync",
+                  "parametersOnMethod": [],
+                  "returnValue": {
+                    "type": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.DataPermission.Rules.DataTargetFieldDto>",
+                    "typeSimple": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.DataPermission.Rules.DataTargetFieldDto>"
+                  }
+                },
+                {
+                  "name": "GetIdNamesAsync",
+                  "parametersOnMethod": [],
+                  "returnValue": {
+                    "type": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.DataPermission.Rules.IdName<System.Guid>>",
+                    "typeSimple": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.DataPermission.Rules.IdName<string>>"
+                  }
+                },
+                {
+                  "name": "CreateAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "input",
+                      "typeAsString": "ONE.Abp.DataPermission.Rules.UserRuleCreateInput, ONE.Abp.DataPermission.Application.Contracts",
+                      "type": "ONE.Abp.DataPermission.Rules.UserRuleCreateInput",
+                      "typeSimple": "ONE.Abp.DataPermission.Rules.UserRuleCreateInput",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "ONE.Abp.DataPermission.Rules.UserRuleDto",
+                    "typeSimple": "ONE.Abp.DataPermission.Rules.UserRuleDto"
+                  }
+                },
+                {
+                  "name": "UpdateAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "id",
+                      "typeAsString": "System.Guid, System.Private.CoreLib",
+                      "type": "System.Guid",
+                      "typeSimple": "string",
+                      "isOptional": false,
+                      "defaultValue": null
+                    },
+                    {
+                      "name": "input",
+                      "typeAsString": "ONE.Abp.DataPermission.Rules.UserRuleCreateInput, ONE.Abp.DataPermission.Application.Contracts",
+                      "type": "ONE.Abp.DataPermission.Rules.UserRuleCreateInput",
+                      "typeSimple": "ONE.Abp.DataPermission.Rules.UserRuleCreateInput",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "ONE.Abp.DataPermission.Rules.UserRuleDto",
+                    "typeSimple": "ONE.Abp.DataPermission.Rules.UserRuleDto"
+                  }
+                },
+                {
+                  "name": "GetAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "id",
+                      "typeAsString": "System.Guid, System.Private.CoreLib",
+                      "type": "System.Guid",
+                      "typeSimple": "string",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "ONE.Abp.DataPermission.Rules.UserRuleDto",
+                    "typeSimple": "ONE.Abp.DataPermission.Rules.UserRuleDto"
+                  }
+                },
+                {
+                  "name": "DeleteAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "id",
+                      "typeAsString": "System.Guid, System.Private.CoreLib",
+                      "type": "System.Guid",
+                      "typeSimple": "string",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "System.Void",
+                    "typeSimple": "System.Void"
+                  }
+                },
+                {
+                  "name": "QueryAsync",
+                  "parametersOnMethod": [
+                    {
+                      "name": "input",
+                      "typeAsString": "ONE.Abp.DataPermission.Rules.UserRuleQueryInput, ONE.Abp.DataPermission.Application.Contracts",
+                      "type": "ONE.Abp.DataPermission.Rules.UserRuleQueryInput",
+                      "typeSimple": "ONE.Abp.DataPermission.Rules.UserRuleQueryInput",
+                      "isOptional": false,
+                      "defaultValue": null
+                    }
+                  ],
+                  "returnValue": {
+                    "type": "ONE.Abp.Pagination.Contracts.Dtos.PagedResult<ONE.Abp.DataPermission.Rules.UserRuleMini>",
+                    "typeSimple": "ONE.Abp.Pagination.Contracts.Dtos.PagedResult<ONE.Abp.DataPermission.Rules.UserRuleMini>"
+                  }
+                }
+              ]
+            }
+          ],
+          "actions": {
+            "CreateAsyncByInput": {
+              "uniqueName": "CreateAsyncByInput",
+              "name": "CreateAsync",
+              "httpMethod": "POST",
+              "url": "api/data-permission/user-rule",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "input",
+                  "typeAsString": "ONE.Abp.DataPermission.Rules.UserRuleCreateInput, ONE.Abp.DataPermission.Application.Contracts",
+                  "type": "ONE.Abp.DataPermission.Rules.UserRuleCreateInput",
+                  "typeSimple": "ONE.Abp.DataPermission.Rules.UserRuleCreateInput",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "input",
+                  "name": "input",
+                  "jsonName": null,
+                  "type": "ONE.Abp.DataPermission.Rules.UserRuleCreateInput",
+                  "typeSimple": "ONE.Abp.DataPermission.Rules.UserRuleCreateInput",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "Body",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "ONE.Abp.DataPermission.Rules.UserRuleDto",
+                "typeSimple": "ONE.Abp.DataPermission.Rules.UserRuleDto"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.DataPermission.Rules.IUserRuleAppService"
+            },
+            "UpdateAsyncByIdAndInput": {
+              "uniqueName": "UpdateAsyncByIdAndInput",
+              "name": "UpdateAsync",
+              "httpMethod": "PUT",
+              "url": "api/data-permission/user-rule/{id}",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "id",
+                  "typeAsString": "System.Guid, System.Private.CoreLib",
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null
+                },
+                {
+                  "name": "input",
+                  "typeAsString": "ONE.Abp.DataPermission.Rules.UserRuleCreateInput, ONE.Abp.DataPermission.Application.Contracts",
+                  "type": "ONE.Abp.DataPermission.Rules.UserRuleCreateInput",
+                  "typeSimple": "ONE.Abp.DataPermission.Rules.UserRuleCreateInput",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "id",
+                  "name": "id",
+                  "jsonName": null,
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": [],
+                  "bindingSourceId": "Path",
+                  "descriptorName": ""
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "input",
+                  "jsonName": null,
+                  "type": "ONE.Abp.DataPermission.Rules.UserRuleCreateInput",
+                  "typeSimple": "ONE.Abp.DataPermission.Rules.UserRuleCreateInput",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "Body",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "ONE.Abp.DataPermission.Rules.UserRuleDto",
+                "typeSimple": "ONE.Abp.DataPermission.Rules.UserRuleDto"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.DataPermission.Rules.IUserRuleAppService"
+            },
+            "DeleteAsyncById": {
+              "uniqueName": "DeleteAsyncById",
+              "name": "DeleteAsync",
+              "httpMethod": "DELETE",
+              "url": "api/data-permission/user-rule/{id}",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "id",
+                  "typeAsString": "System.Guid, System.Private.CoreLib",
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "id",
+                  "name": "id",
+                  "jsonName": null,
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": [],
+                  "bindingSourceId": "Path",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "System.Void",
+                "typeSimple": "System.Void"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.DataPermission.Rules.IUserRuleAppService"
+            },
+            "GetAsyncById": {
+              "uniqueName": "GetAsyncById",
+              "name": "GetAsync",
+              "httpMethod": "GET",
+              "url": "api/data-permission/user-rule/{id}",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "id",
+                  "typeAsString": "System.Guid, System.Private.CoreLib",
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "id",
+                  "name": "id",
+                  "jsonName": null,
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": [],
+                  "bindingSourceId": "Path",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "ONE.Abp.DataPermission.Rules.UserRuleDto",
+                "typeSimple": "ONE.Abp.DataPermission.Rules.UserRuleDto"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.DataPermission.Rules.IUserRuleAppService"
+            },
+            "QueryAsyncByInput": {
+              "uniqueName": "QueryAsyncByInput",
+              "name": "QueryAsync",
+              "httpMethod": "GET",
+              "url": "api/data-permission/user-rule/page",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "input",
+                  "typeAsString": "ONE.Abp.DataPermission.Rules.UserRuleQueryInput, ONE.Abp.DataPermission.Application.Contracts",
+                  "type": "ONE.Abp.DataPermission.Rules.UserRuleQueryInput",
+                  "typeSimple": "ONE.Abp.DataPermission.Rules.UserRuleQueryInput",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "input",
+                  "name": "Name",
+                  "jsonName": null,
+                  "type": "System.String",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "PageIndex",
+                  "jsonName": null,
+                  "type": "System.Int32",
+                  "typeSimple": "number",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "PageSize",
+                  "jsonName": null,
+                  "type": "System.Int32",
+                  "typeSimple": "number",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "SortFields",
+                  "jsonName": null,
+                  "type": "System.Collections.Generic.IList<System.String>",
+                  "typeSimple": "[string]",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                }
+              ],
+              "returnValue": {
+                "type": "ONE.Abp.Pagination.Contracts.Dtos.PagedResult<ONE.Abp.DataPermission.Rules.UserRuleMini>",
+                "typeSimple": "ONE.Abp.Pagination.Contracts.Dtos.PagedResult<ONE.Abp.DataPermission.Rules.UserRuleMini>"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.DataPermission.Rules.IUserRuleAppService"
+            },
+            "GetIdNamesAsync": {
+              "uniqueName": "GetIdNamesAsync",
+              "name": "GetIdNamesAsync",
+              "httpMethod": "GET",
+              "url": "api/data-permission/user-rule/kv",
+              "supportedVersions": [],
+              "parametersOnMethod": [],
+              "parameters": [],
+              "returnValue": {
+                "type": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.DataPermission.Rules.IdName<System.Guid>>",
+                "typeSimple": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.DataPermission.Rules.IdName<string>>"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.DataPermission.Rules.IUserRuleAppService"
+            },
+            "GetUserTargetFieldsAsync": {
+              "uniqueName": "GetUserTargetFieldsAsync",
+              "name": "GetUserTargetFieldsAsync",
+              "httpMethod": "GET",
+              "url": "api/data-permission/user-rule/fields",
+              "supportedVersions": [],
+              "parametersOnMethod": [],
+              "parameters": [],
+              "returnValue": {
+                "type": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.DataPermission.Rules.DataTargetFieldDto>",
+                "typeSimple": "Volo.Abp.Application.Dtos.ListResultDto<ONE.Abp.DataPermission.Rules.DataTargetFieldDto>"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "ONE.Abp.DataPermission.Rules.IUserRuleAppService"
+            }
+          }
+        }
+      }
+    }
+  },
+  "types": {}
+}

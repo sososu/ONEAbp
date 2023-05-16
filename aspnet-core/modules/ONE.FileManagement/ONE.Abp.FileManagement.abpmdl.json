@@ -1,0 +1,111 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {},
+      "host": {}
+    }
+  },
+  "packages": {
+    "ONE.Abp.FileManagement.Domain.Shared": {
+      "path": "src/ONE.Abp.FileManagement.Domain.Shared/ONE.Abp.FileManagement.Domain.Shared.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.FileManagement.Domain": {
+      "path": "src/ONE.Abp.FileManagement.Domain/ONE.Abp.FileManagement.Domain.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.FileManagement.Application.Contracts": {
+      "path": "src/ONE.Abp.FileManagement.Application.Contracts/ONE.Abp.FileManagement.Application.Contracts.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.FileManagement.Application": {
+      "path": "src/ONE.Abp.FileManagement.Application/ONE.Abp.FileManagement.Application.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.FileManagement.EntityFrameworkCore": {
+      "path": "src/ONE.Abp.FileManagement.EntityFrameworkCore/ONE.Abp.FileManagement.EntityFrameworkCore.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.FileManagement.MongoDB": {
+      "path": "src/ONE.Abp.FileManagement.MongoDB/ONE.Abp.FileManagement.MongoDB.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.FileManagement.HttpApi": {
+      "path": "src/ONE.Abp.FileManagement.HttpApi/ONE.Abp.FileManagement.HttpApi.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.FileManagement.HttpApi.Client": {
+      "path": "src/ONE.Abp.FileManagement.HttpApi.Client/ONE.Abp.FileManagement.HttpApi.Client.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.FileManagement.TestBase": {
+      "path": "test/ONE.Abp.FileManagement.TestBase/ONE.Abp.FileManagement.TestBase.abppkg.json",
+      "folder": "test"
+    },
+    "ONE.Abp.FileManagement.EntityFrameworkCore.Tests": {
+      "path": "test/ONE.Abp.FileManagement.EntityFrameworkCore.Tests/ONE.Abp.FileManagement.EntityFrameworkCore.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "ONE.Abp.FileManagement.MongoDB.Tests": {
+      "path": "test/ONE.Abp.FileManagement.MongoDB.Tests/ONE.Abp.FileManagement.MongoDB.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "ONE.Abp.FileManagement.Domain.Tests": {
+      "path": "test/ONE.Abp.FileManagement.Domain.Tests/ONE.Abp.FileManagement.Domain.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "ONE.Abp.FileManagement.Application.Tests": {
+      "path": "test/ONE.Abp.FileManagement.Application.Tests/ONE.Abp.FileManagement.Application.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "ONE.Abp.FileManagement.HttpApi.Host": {
+      "path": "host/ONE.Abp.FileManagement.HttpApi.Host/ONE.Abp.FileManagement.HttpApi.Host.abppkg.json",
+      "folder": "host"
+    },
+    "ONE.Abp.FileManagement.Web": {
+      "path": "src/ONE.Abp.FileManagement.Web/ONE.Abp.FileManagement.Web.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.FileManagement.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/ONE.Abp.FileManagement.HttpApi.Client.ConsoleTestApp/ONE.Abp.FileManagement.HttpApi.Client.ConsoleTestApp.abppkg.json",
+      "folder": "test"
+    },
+    "ONE.Abp.FileManagement.Web.Host": {
+      "path": "host/ONE.Abp.FileManagement.Web.Host/ONE.Abp.FileManagement.Web.Host.abppkg.json",
+      "folder": "host"
+    },
+    "ONE.Abp.FileManagement.AuthServer": {
+      "path": "host/ONE.Abp.FileManagement.AuthServer/ONE.Abp.FileManagement.AuthServer.abppkg.json",
+      "folder": "host"
+    },
+    "ONE.Abp.FileManagement.Host.Shared": {
+      "path": "host/ONE.Abp.FileManagement.Host.Shared/ONE.Abp.FileManagement.Host.Shared.abppkg.json",
+      "folder": "host"
+    },
+    "ONE.Abp.FileManagement.Web.Unified": {
+      "path": "host/ONE.Abp.FileManagement.Web.Unified/ONE.Abp.FileManagement.Web.Unified.abppkg.json",
+      "folder": "host"
+    },
+    "ONE.Abp.FileManagement.Blazor": {
+      "path": "src/ONE.Abp.FileManagement.Blazor/ONE.Abp.FileManagement.Blazor.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.FileManagement.Blazor.Host": {
+      "path": "host/ONE.Abp.FileManagement.Blazor.Host/ONE.Abp.FileManagement.Blazor.Host.abppkg.json",
+      "folder": "host"
+    },
+    "ONE.Abp.FileManagement.Blazor.Server": {
+      "path": "src/ONE.Abp.FileManagement.Blazor.Server/ONE.Abp.FileManagement.Blazor.Server.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.FileManagement.Blazor.WebAssembly": {
+      "path": "src/ONE.Abp.FileManagement.Blazor.WebAssembly/ONE.Abp.FileManagement.Blazor.WebAssembly.abppkg.json",
+      "folder": "src"
+    },
+    "ONE.Abp.FileManagement.Blazor.Server.Host": {
+      "path": "host/ONE.Abp.FileManagement.Blazor.Server.Host/ONE.Abp.FileManagement.Blazor.Server.Host.abppkg.json",
+      "folder": "host"
+    }
+  }
+}

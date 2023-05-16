@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="..\..\..\..\common.props" />
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\ONE.Abp.Shared.Hosting\ONE.Abp.Shared.Hosting.csproj" />
+	</ItemGroup>
+
+
+
+	<ItemGroup>
+		<PackageReference Include="Yarp.ReverseProxy" Version="$(YarpReverseProxyVersion)" />
+		<PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="$(MicrosoftVersion)" />
+	</ItemGroup>
+
+</Project>

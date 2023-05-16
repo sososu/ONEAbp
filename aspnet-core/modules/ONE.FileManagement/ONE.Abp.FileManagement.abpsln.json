@@ -1,0 +1,7 @@
+{
+  "modules": {
+    "ONE.Abp.FileManagement": {
+      "path": "ONE.Abp.FileManagement.abpmdl.json"
+    }
+  }
+}

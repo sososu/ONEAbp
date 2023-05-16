@@ -1,0 +1,16 @@
+{
+    "culture": "zh-Hant",
+  "texts": {
+    "Menu:Home": "首頁",
+    "Welcome": "歡迎",
+    "LongWelcomeMessage": "歡迎來到此應用程式. 這是一個基於ABP框架的起始專案. 有關更多訊息, 請瀏覽 abp.io.",
+    "Permission:SettingManagementPermissions": "系统设置",
+    "Permission:IdentitySetting": "身份标识管理",
+    "Permission:AccountSetting": "账户管理",
+    "Permission:Create": "创建",
+    "Permission:Update": "更新",
+    "Permission:Delete": "删除",
+    "Permission:Enable": "启用",
+    "Permission:FileSetting": "文件管理"
+  }
+  }

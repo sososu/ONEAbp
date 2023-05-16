@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<RootNamespace>ONE.Abp.DataDictionary</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.Ddd.Application.Contracts" Version="$(AbpVersion)" />
+		<PackageReference Include="Volo.Abp.Authorization" Version="$(AbpVersion)" />
+		<ProjectReference Include="..\ONE.Abp.DataDictionary.Domain.Shared\ONE.Abp.DataDictionary.Domain.Shared.csproj" />
+		<ProjectReference Include="..\..\..\..\framework\ONE.Abp\src\ONE.Abp.Pagination.Contracts\ONE.Abp.Pagination.Contracts.csproj" />
+	</ItemGroup>
+
+</Project>

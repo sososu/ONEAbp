@@ -1,0 +1,17 @@
+{
+  "culture": "en",
+  "texts": {
+    "MyAccount": "My account",
+    "SamplePageMessage": "A sample page for the DataPermission module",
+    "DataPermission:1001": "Rule already exists",
+    "DataPermission:1002": "Data target are inconsistent",
+    "DataPermission:1003": "The DataTarget-UserRuleId-DataRuleId should be unique.'{dataTarget}-{userRuleId}-{dataRuleId}' is already taken!",
+    "DataPermission:1004": "The DataRule name should be unique. '{Name}' is already taken!",
+    "DataPermission:1005": "The UserRule name should be unique. '{Name}' is already taken!",
+    "Permission:Default": "Default",
+    "Permission:Create": "Create",
+    "Permission:Update": "Update",
+    "Permission:Enable": "Enable",
+    "Permission:Delete": "Delete"
+  }
+}

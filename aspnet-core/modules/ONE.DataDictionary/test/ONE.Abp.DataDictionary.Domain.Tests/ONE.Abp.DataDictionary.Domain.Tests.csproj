@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>ONE.Abp.DataDictionary</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="Microsoft.NET.Test.Sdk" Version="$(MicrosoftNETTestSdkVersion)" />
+    <ProjectReference Include="..\ONE.Abp.DataDictionary.EntityFrameworkCore.Tests\ONE.Abp.DataDictionary.EntityFrameworkCore.Tests.csproj" />
+  </ItemGroup>
+
+</Project>

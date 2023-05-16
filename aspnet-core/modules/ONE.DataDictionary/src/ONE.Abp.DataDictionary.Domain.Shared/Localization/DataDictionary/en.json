@@ -1,0 +1,18 @@
+{
+  "culture": "en",
+  "texts": {
+    "MyAccount": "My account",
+    "SamplePageMessage": "A sample page for the DataDictionary module",
+    "DataDictionary:1001": "Enumeration sources cannot be deleted",
+    "DataDictionary:1002": "Enumeration sources value cannot be edited",
+    "DataDictionary:1003": "Enumeration sources code cannot be edited",
+    "DataDictionary:1004": "The dictionary value should be unique. '{Value}' is already taken!",
+    "DataDictionary:1005": "The dictionary code should be unique. '{Code}' is already taken!",
+    "DataDictionary:1006": "The dictionary name should be unique. '{Name}' is already taken!",
+    "Permission:Default": "Default",
+    "Permission:Create": "Create",
+    "Permission:Update": "Update",
+    "Permission:Enable": "Enable",
+    "Permission:Delete": "Delete"
+  }
+}

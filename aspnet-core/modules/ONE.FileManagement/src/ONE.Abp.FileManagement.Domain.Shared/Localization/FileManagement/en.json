@@ -1,0 +1,17 @@
+{
+  "culture": "en",
+  "texts": {
+    "MyAccount": "My account",
+    "SamplePageMessage": "A sample page for the FileManagement module",
+    "FileManagement:1001": "Bytes of file '{Name}' can not be null or empty!",
+    "FileManagement:1002": "File exceeds the maximum upload size ({Size} MB)!",
+    "FileManagement:1004": "The remaining space is insufficient. The total size is ({Size} MB)!",
+    "FileManagement:1003": "The '{Mine}' file format is not supported",
+    "Permission:Default": "Default",
+    "Permission:Create": "Create",
+    "Permission:Update": "Update",
+    "Permission:Enable": "Enable",
+    "Permission:Delete": "Delete",
+    "Permission:Download": "Download"
+  }
+}
