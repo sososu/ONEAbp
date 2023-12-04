@@ -24,6 +24,10 @@
 
     dotnet tool install -g ONE.Abp.Cli
 
+首先,如果你没有安装[ONEABP CLI](https://docs.abp.io/zh-Hans/abp/latest/CLI),请先安装它:
+
+    dotnet tool update -g ONE.Abp.Cli
+    
 在一个空文件夹使用 `abp new` 命令创建新解决方案:
 
 base模板
