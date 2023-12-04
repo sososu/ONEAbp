@@ -4,7 +4,7 @@ using System;
 using Volo.Abp.AuditLogging.EntityFrameworkCore;
 using Volo.Abp.BackgroundJobs.EntityFrameworkCore;
 using Volo.Abp.EntityFrameworkCore;
-using Volo.Abp.EntityFrameworkCore.PostgreSql;
+using Volo.Abp.EntityFrameworkCore.SqlServer;
 using Volo.Abp.FeatureManagement.EntityFrameworkCore;
 using Volo.Abp.Modularity;
 using Volo.Abp.PermissionManagement.EntityFrameworkCore;
@@ -17,7 +17,7 @@ namespace MyCompanyName.MyProjectName.EntityFrameworkCore;
     typeof(MyProjectNameDomainModule),
     typeof(AbpPermissionManagementEntityFrameworkCoreModule),
     typeof(AbpSettingManagementEntityFrameworkCoreModule),
-    typeof(AbpEntityFrameworkCorePostgreSqlModule),
+    typeof(AbpEntityFrameworkCoreSqlServerModule),
     typeof(AbpBackgroundJobsEntityFrameworkCoreModule),
     typeof(AbpAuditLoggingEntityFrameworkCoreModule),
     typeof(AbpFeatureManagementEntityFrameworkCoreModule),
@@ -49,7 +49,7 @@ public class MyProjectNameEntityFrameworkCoreModule : AbpModule
         {
             /* The main point to change your DBMS.
              * See also MyProjectNameMigrationsDbContextFactory for EF Core tooling. */
-            options.UseNpgsql();
+            options.UseSqlServer();
         });
 
         //<TEMPLATE-REMOVE IF-NOT='dbms:SQLite'>

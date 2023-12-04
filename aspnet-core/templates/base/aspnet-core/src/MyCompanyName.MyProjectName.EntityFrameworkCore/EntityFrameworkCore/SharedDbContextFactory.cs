@@ -27,7 +27,7 @@ namespace MyCompanyName.MyProjectName.EntityFrameworkCore
             var configuration = BuildConfiguration();
 
             var builder = new DbContextOptionsBuilder<SharedDbContext>()
-                 .UseNpgsql(configuration.GetConnectionString("AbpPermissionManagement"));
+                 .UseSqlServer(configuration.GetConnectionString("AbpPermissionManagement"));
 
             return new SharedDbContext(builder.Options);
         }

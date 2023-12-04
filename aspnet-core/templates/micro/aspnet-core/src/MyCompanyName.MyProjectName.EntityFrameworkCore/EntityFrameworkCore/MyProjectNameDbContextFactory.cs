@@ -22,7 +22,7 @@ public class MyProjectNameDbContextFactory : IDesignTimeDbContextFactory<MyProje
         var configuration = BuildConfiguration();
 
         var builder = new DbContextOptionsBuilder<MyProjectNameDbContext>()
-             .UseNpgsql(configuration.GetConnectionString("Default"));
+             .UseSqlServer(configuration.GetConnectionString("Default"));
 
         return new MyProjectNameDbContext(builder.Options);
     }
