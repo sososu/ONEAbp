@@ -51,7 +51,7 @@ namespace TemplateBuilders
             }
             if (context.Template.Name == OneAppTemplate.TemplateName)
             {
-                pipeline.Steps.Add(new DatabaseManagementSystemChangeStep(context.Template.As<OneAppTemplate>().HasDbMigrations)); // todo: move to custom steps?
+                pipeline.Steps.Add(new MyDatabaseManagementSystemChangeStep(context.Template.As<OneAppTemplate>().HasDbMigrations)); // todo: move to custom steps?
             }
 
             if (context.Template.Name == AppNoLayersTemplate.TemplateName ||

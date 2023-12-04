@@ -113,11 +113,11 @@ namespace TemplateBuilders
             }
             if (context.Template is OneAppTemplate oneTemplateBase)
             {
-                oneTemplateBase.HasDbMigrations = SemanticVersion.Parse(templateFile.Version) < new SemanticVersion(4, 3, 99);
+                oneTemplateBase.HasDbMigrations =false;
             }
             if (context.Template is MicroTemplate microTemplateBase)
             {
-                microTemplateBase.HasDbMigrations = SemanticVersion.Parse(templateFile.Version) < new SemanticVersion(4, 3, 99);
+                microTemplateBase.HasDbMigrations = false;
             }
 
             await EventBus.PublishAsync(new ProjectCreationProgressEvent
