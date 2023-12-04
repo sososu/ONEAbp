@@ -24,7 +24,7 @@
 
     dotnet tool install -g ONE.Abp.Cli
 
-首先,如果你没有安装[ONEABP CLI](https://docs.abp.io/zh-Hans/abp/latest/CLI),请先安装它:
+更新最新版本:
 
     dotnet tool update -g ONE.Abp.Cli
     
